@@ -7,3 +7,8 @@ const route = useRoute()
     Компоненты гидравлики: надежность
   </div>
 </template>
+
+<style lang="scss" scoped> 
+
+
+</style>
