@@ -3,7 +3,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div>
+  <div class="container">
     Компоненты гидравлики: надежность
   </div>
 </template>

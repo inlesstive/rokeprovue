@@ -2,6 +2,6 @@
     <div>
         <Header></Header>
             <slot />
-        <Footer></Footer>
+        <Footer class="container"></Footer>
     </div>
 </template>
