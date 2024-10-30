@@ -4,7 +4,6 @@ const route = useRoute()
 
 <template>
   <div class="container">
-    Компоненты гидравлики: надежность
   </div>
 </template>
 
