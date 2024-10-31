@@ -16,12 +16,12 @@
                     <span>DIN 2353</span>
                 </li>
             </ul>
-            <ul class="header__catalog-menu-list">
+            <!-- <ul class="header__catalog-menu-list">
                 <li class="header__catalog-menu-list-item" v-for="_ in 2">
                     <NuxtImg src="https://s3-alpha-sig.figma.com/img/f0dd/a76d/adccf4a4992131ae0481b22ae469f914?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kqYaP2CZcty3vPb0rNXBIVgJ0UPYDWLSNpPwb84PstODxMs3z4ZXW4~hITUIrCfIaVT3LmGq7TR3hEA0Gk8hitEu2anlZsPrSmzTSxu54Y9plXEMKsqFkriqxnEymVpXmPUMx2Z~RKiD5dCK7QI9N6N~QdCwV1OgjQB6CWV~qvVMHYxzz~a8ymaf89sQbhIwnxCVrs4OmZF5jR~XxgGOb0QJhYpev1tNNWfz7gy-YvbBU4Hmajxmq-3TcRCPkIyUOa1ppxKs3n255iizB9VwFj~mNmaUJ1oYR8mMc-OVsq75K7AWb68CaTsf2u9sh03NW7ijAnFg2ZR3PDqvOo7HFA__"></NuxtImg>
                     <span>Игольчатые клапаны</span>
                 </li>
-            </ul>
+            </ul> -->
             </div>
 
         </div>
@@ -111,8 +111,18 @@
     }
 }
 @media screen and (max-width: 767.99px) {
-    .header__catalog {
-        display: none;
-    }
+
+        .header__catalog-menu-list {
+            width: 100%;
+        }
+        .header__catalog-menu {
+            position: absolute;
+            z-index: 10006;
+            width: 100%;
+        }
+        .header__catalog-menu {
+
+            top: -45px;
+        }
 }
 </style>
