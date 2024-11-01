@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "nuxt": "^3.13.2",
+    "swiper": "^11.1.14",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxt/image": "^1.8.1",
+    "nuxt-swiper": "^1.2.2",
     "sass": "^1.80.4",
     "sass-loader": "^16.0.2"
   }

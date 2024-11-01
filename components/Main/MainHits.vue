@@ -209,14 +209,14 @@
       line-height: 90%; 
       letter-spacing: -1.4px;
       text-transform: uppercase;
-      &::after{
-      content: "";
-      position: absolute;
-      width: 112px;
-      height: 9px;
-      background: #17172D;
-      bottom: 4px;
-      right: 116px;
+      &::after {
+          content: "";
+          position: absolute;
+          width: 144px;
+          height: 9px;
+          background: #17172D;
+          bottom: 4px;
+          right: 140px;
       }
       & span {
         color: #3064C7;
@@ -260,11 +260,11 @@
       .main__hits-head-title::after {
           content: "";
           position: absolute;
-          width: 114px;
+          width: 136px;
           height: 9px;
           background: #17172D;
-          bottom: 4px;
-          right: 114px;
+          bottom: 5px;
+          right: 145px;
       }
     }
   

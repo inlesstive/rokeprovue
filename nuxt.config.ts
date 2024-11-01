@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     '@/assets/style/main.scss'
   ],
 
-  modules: ['@nuxt/image']
+  modules: ['@nuxt/image', 'nuxt-swiper']
 })
