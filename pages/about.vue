@@ -526,4 +526,9 @@ const route = useRoute()
   display: flex;
   gap: 20px;
 }
+
+.about{
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
 </style>

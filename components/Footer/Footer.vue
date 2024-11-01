@@ -86,7 +86,7 @@
 </template>
 
 
-<style>
+<style scoped>
 .political_site{
     color: #808080;
     font-family: "Myriad Pro";

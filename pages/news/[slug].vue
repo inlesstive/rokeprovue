@@ -185,4 +185,8 @@ text-transform: uppercase;
   display: flex;
 }
 
+.news{
+  padding-bottom: 30px;
+}
+
 </style>

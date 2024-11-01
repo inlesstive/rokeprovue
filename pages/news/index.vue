@@ -161,4 +161,8 @@ const route = useRoute()
   line-height: 100%; 
 }
 
+.news{
+  padding: 30px 0px;
+}
+
 </style>

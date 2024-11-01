@@ -176,11 +176,13 @@ const route = useRoute()
     max-width: 111px;
     height: 100%;
     max-height: 117px;
+    object-fit: contain;
 }
 
 .document{
   display: flex;
   gap:294px;
+  padding: 30px 0px;
 }
 
 .right_block{
