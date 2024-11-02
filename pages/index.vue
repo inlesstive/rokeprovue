@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 </script>
 
 <template>
@@ -12,7 +12,4 @@ const route = useRoute()
   </div>
 </template>
 
-<style lang="scss" scoped> 
-
-
-</style>
+<style lang="scss" scoped></style>

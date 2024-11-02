@@ -34,7 +34,12 @@
       <SwiperSlide v-for="slide in 10" :key="slide">
         <MainItemSlider></MainItemSlider>
       </SwiperSlide>
-      <MainSwiperCon></MainSwiperCon>
+      <ClientOnly>
+        <div class="wrapper">
+          <MainSwiperCon></MainSwiperCon>
+        </div>
+      </ClientOnly>
+      
     </Swiper>
     <div class="mainforus-mob-wrapper">
       <MainItemSlider class="mob" v-for="_ in 10"></MainItemSlider>
@@ -46,6 +51,13 @@
 
 <style lang="scss" scoped>
 
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
 .mob {
   display: none;
 }
@@ -160,6 +172,9 @@
       }
       .mainforus__top-title-pos::after {
         display: none;
+    }
+    .wrapper {
+      display: none;
     }
 
   }
