@@ -17,8 +17,8 @@ const route = useRoute()
       <div class="faq-list">
         <ul class="list">
           <li class="list-item"> 
-            <UiButtonFaqButton ></UiButtonFaqButton>
-            <UiButtonFaqButton >Изолированные фитинги</UiButtonFaqButton>
+            <UiButtonFaqButton></UiButtonFaqButton>
+            <UiButtonFaqButton>Изолированные фитинги</UiButtonFaqButton>
             <UiButtonFaqButton>Трубные соединения</UiButtonFaqButton>
             <UiButtonFaqButton>Гидравлические фитинги и клапаны</UiButtonFaqButton>
             <UiButtonFaqButton>Быстроразъемные соединения</UiButtonFaqButton>

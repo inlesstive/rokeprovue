@@ -6,6 +6,7 @@ const route = useRoute()
   <section class="news container">
 
       <h1 class="news_title">
+<<<<<<< HEAD
         <div class="news_title-pos">
           <span class="sub_title">
               Актуальные события
@@ -16,11 +17,18 @@ const route = useRoute()
         <div class="news_title mob">
           <span> Актуальные <br>события </span> roke
         </div>
+=======
+        <span class="sub_title">
+          Актуальные события
+        </span> 
+        и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        ROKE 
+>>>>>>> 15fc0667b1fb249d7d653565a94e0d958d701be3
       </h1>
 
 
       <div class="all_card">
-        <div class="card">
+        <div class="card" v-for="_ in 20">
           <div class="card_item">
 
             <span class="date">
@@ -36,28 +44,6 @@ const route = useRoute()
 
               <p class="dscr_info">
                 Наша компания получила сертификат DNV, что подтверждает соответствие продукции требованиям стандарта для морских судов и оборудования.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_item">
-
-              <span class="date">
-              15.08.2024
-            </span>
-
-            <img src="/public/image/news1.png"  alt="">
-
-            <div class="dscr">
-              <span class="dscr_title">
-                Наше представительство в России
-              </span>
-
-              <p class="dscr_info">
-                В целях улучшения взаимодействия с нашими партнерами, сокращения логистического плеча мы открыли представительство в России.
               </p>
             </div>
 

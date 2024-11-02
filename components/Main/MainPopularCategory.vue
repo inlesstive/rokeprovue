@@ -37,9 +37,14 @@ function handleMouseOver(index: any) {
     <div class="pcategory__top">
       <span class="pcategory__top-descriptor">Популярные категории</span>
       <h3 class="pcategory__top-title">
-        Ведущие <br />
-        <span>категории &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сегодня</span>
-      </h3>
+          <div class="pcategory__top-title-pos">
+            <span>Ведущие</span> <br>категории &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; сегодня
+          </div>
+          <div class="pcategory__top-title-pos mob">
+            <span>Ведущие</span> категории сегодня
+          </div>
+          
+        </h3>
     </div>
 
     <div class="pcategory__content">
@@ -52,7 +57,10 @@ function handleMouseOver(index: any) {
           @mouseover="handleMouseOver(index)"
           
         >
-          <span :class="{ 'active-list-item': activeIndex === index }">{{ item.text }}</span>
+          <div class="pcategory__content-wrapper">
+            <NuxtImg :src="item.image" alt="Изображение категории" />
+            <span :class="{ 'active-list-item': activeIndex === index }">{{ item.text }}</span>
+          </div>
           <UiIconArrowP />
         </li>
       </ul>
@@ -61,10 +69,15 @@ function handleMouseOver(index: any) {
 </template>
 
 <style lang="scss" scoped> 
-
+.mob {
+  display: none;
+}
 
 .active-list-item {
   color: #17172D !important;
+}
+.pcategory__content-wrapper img {
+  display: none;
 }
 
 .pcategory {
@@ -122,7 +135,9 @@ function handleMouseOver(index: any) {
     justify-content: space-between;
 
     &-title {
-        color:  #3064C7;
+        &-pos {
+
+        color:  #17172D;
         font-family: "Century Gothic";
         font-size: 70px;
         font-style: normal;
@@ -130,8 +145,20 @@ function handleMouseOver(index: any) {
         line-height: 90%; 
         letter-spacing: -1.4px;
         text-transform: uppercase;
+        position: relative;
+        &::after {
+                content: "";
+                position: absolute;
+                background-color: #17172D;
+                width: 175px;
+                height: 8px;
+                left: 362px;
+                bottom: 4px;
+            
+          }
+        
         & span {
-          color: var(---, #17172D);
+          color:  #3064C7;
           font-family: "Century Gothic";
           font-size: 70px;
           font-style: normal;
@@ -139,17 +166,10 @@ function handleMouseOver(index: any) {
           line-height: 90%;
           letter-spacing: -1.4px;
           text-transform: uppercase;
-          position: relative;
-          &::after {
-            content: "";
-            position: absolute;
-            background-color: #17172D;
-            width: 214px;
-            height: 8px;
-            right: 277px;
-            bottom: 14px;
-          }
+          
         }
+        }
+        
     }
     &-descriptor {
       color: #17172D;
@@ -160,10 +180,124 @@ function handleMouseOver(index: any) {
       line-height: 90%;
       text-transform: uppercase;
     }
-    & * {
-      flex-basis: 50%;
-    }
   }
 }
+
+
+@media screen and (max-width: 1439.99px) {
+    
+  }
+  
+  @media screen and (max-width: 1199.99px) {
+    .pcategory__top-title-pos {
+      font-size: 56px;
+      & span {
+        font-size: 56px;
+      }
+    }
+    .pcategory__top-title-pos::after {
+        content: "";
+        position: absolute;
+        background-color: #17172D;
+        width: 129px;
+        height: 8px;
+        left: 287px;
+        bottom: 3px;
+    }
+    .pcategory__top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .pcategory__content-list-item span {
+        font-size: 26px;
+    }
+  }
+  
+  @media screen and (max-width: 991.99px) {
+      
+  }
+  
+  @media screen and (max-width: 767.99px) {
+    .pcategory__top-title-pos::after {
+      display: none;
+    }
+    .pcategory__top-title-pos {
+      display: none;
+    }
+    .mob {
+      display: block !important;
+    }
+
+    .pcategory__content img {
+      display: none;
+    }
+    .pcategory__content-list-item {
+        padding: 10px ;
+        background: #F7F7F7;
+        border-top: none;
+        align-items: flex-start;
+        &:last-child {
+          border-bottom: 0px;
+        }
+    }
+    .pcategory__content-list-item span {
+        font-size: 22px;
+    }
+    .pcategory__content-list-item span {
+        font-size: 22px;
+    }
+    .pcategory__content-list {
+        gap: 10px;
+      }
+
+      .pcategory__content-list-item img {
+        display: block;
+        max-width: 52px;
+
+      }
+      .pcategory__content-wrapper {
+        display: flex;
+        gap: 10px;
+      }
+      .pcategory__content-list-item span{
+        width: unset;
+      }
+    
+      .pcategory__content-list-item span {
+          color: #17172D;
+
+      }
+      .pcategory__content {
+          margin-top: 15px;
+
+      }
+      .pcategory__content-list-item svg {
+        max-width: 14px;
+        transform: rotate(270deg);
+      }
+  }
+  
+  @media screen and (max-width: 539.99px) {
+    .pcategory__top-title-pos {
+      font-size: 35px;
+      & span {
+        font-size: 35px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 424.99px) {
+      
+  }
+  
+  @media screen and (max-width: 375.99px) {
+      
+  }
+  
+  @media screen and (max-width: 319.99px) {
+      
+  }
 
 </style>
