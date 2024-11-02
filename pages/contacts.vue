@@ -104,7 +104,7 @@ const tabs = ref(true)
 
           
           <div class="politcal"> 
-            <input type="checkbox" class="custom-checkbox">
+            <UiButtonCheckBox></UiButtonCheckBox>
 
             <p class="political-documentation">
                Я согласен с
