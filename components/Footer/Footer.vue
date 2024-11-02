@@ -469,6 +469,7 @@
         display: flex;
         flex-direction: column;
         gap: 31px;
+        width: 355px;
     }
 
     .footer {

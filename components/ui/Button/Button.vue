@@ -10,7 +10,7 @@
     </button>
 </template>
 
-<style>
+<style scoped>
 
 .button:hover .button_sub {
   color: #808080;

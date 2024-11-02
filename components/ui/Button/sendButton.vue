@@ -1,13 +1,14 @@
 <template>
 
     <button class="button">
-        <span class="title">Отправить</span>
+        <slot>Отправить</slot>
     </button>
 
 </template>
 
-<style>
+<style scoped>
 .button{
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +16,6 @@
     background: #3064C7;
     border-radius: 3px;
     width: 100%;
-}
-
-.title{
     color:#FFF;
     font-family: "Myriad Pro";
     font-size: 20px;
@@ -25,7 +23,9 @@
     font-weight: 600;
     line-height: 90%; 
     text-transform: uppercase;
+    padding: 20px;
 }
+
 
 .button:hover{
     background: #133E91;

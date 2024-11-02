@@ -108,7 +108,7 @@ const tabs = ref(true)
 
             <p class="political-documentation">
                Я согласен с
-              <span class="text">Политикой конфиденциальности</span>
+              <a class="link" href="">Политикой конфиденциальности</a>
             </p>
           </div>
 
@@ -129,6 +129,17 @@ const tabs = ref(true)
 
 <style lang="scss" scoped> 
 
+.title{
+  padding: 30px 0;
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 105px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; 
+  text-transform: uppercase;
+}
+
 .file{
   color: #3064C7;
   font-family: "Myriad Pro";
@@ -145,7 +156,7 @@ const tabs = ref(true)
   font-style: normal;
   font-weight: 400;
   line-height: 100%; 
-  & .text{
+  & .link{
     color: #000;
     font-family: "Myriad Pro";
     font-size: 24px;
@@ -164,7 +175,12 @@ const tabs = ref(true)
 }
 
 .input{
-  width: 100%;
+  color: #808080;
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; 
   height: 100%;
   display: flex;
   padding: 10px 0px;
@@ -334,5 +350,46 @@ const tabs = ref(true)
 
 .contact-button:hover{
   background: #f7f7f7bd;
+}
+
+@media screen and (max-width: 1439.99px){
+  
+}
+
+@media screen and (max-width: 1199.99px){
+
+}
+
+@media screen and (max-width: 991.99px){
+
+}
+
+@media screen and (max-width: 767.99px){
+
+}
+
+@media screen and (max-width: 539.99px){
+
+}
+
+@media screen and (max-width: 424.99px) {
+  
+}
+
+@media screen and (max-width: 375.99px) {
+  .title{
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; 
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  }
+  .contact-button{
+    
+  }
+  
 }
 </style>

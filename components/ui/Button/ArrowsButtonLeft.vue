@@ -7,7 +7,7 @@
     </button>  
 </template>
 
-<style>
+<style scoped>
 .arrows{
     background-color: white;
     outline: none;

@@ -9,7 +9,8 @@ const route = useRoute()
         <span class="sub_title">
           Актуальные события
         </span> 
-        и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROKE 
+        <!-- и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -->
+        ROKE 
       </h1>
 
       <div class="all_card">
@@ -114,6 +115,7 @@ const route = useRoute()
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
+  border: 1px solid #d9d9d9;
 }
 
 .card_item{
@@ -163,6 +165,86 @@ const route = useRoute()
 
 .news{
   padding: 30px 0px;
+}
+
+@media screen and (max-width: 375.99px){
+  .news_title{
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  width: 355px;
+  }
+
+  .sub_title{
+  color: #3064C7;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; 
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  }
+
+  .news_title::before{
+    display: none;
+  }
+
+  .all_card{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .card{
+    display: flex;
+    width: 355px;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .date{
+    font-size: 10px;
+  }
+
+
+  .card_item img{
+    width: 218px;
+    height: 82px;
+    flex-shrink: 0;
+  }
+
+  .card_item{
+    display: flex;
+    gap: 10px;
+    width: auto;
+  }
+ 
+  .dscr_title{
+    font-size: 18px;
+  }
+
+  .dscr_info{
+    width: 311px;
+    font-size: 16px;
+  }
+
+  .dscr{
+    width: auto;
+    display: flex;
+    gap: 5px;
+  }
+
+  .news{
+    padding: 10px 20px;
+  }
 }
 
 </style>
