@@ -9,12 +9,12 @@ const route = useRoute()
         <span class="sub_title">
           Актуальные события
         </span> 
-        <!-- и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -->
+        и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         ROKE 
       </h1>
 
       <div class="all_card">
-        <div class="card">
+        <div class="card" v-for="_ in 20">
           <div class="card_item">
 
             <span class="date">
@@ -30,28 +30,6 @@ const route = useRoute()
 
               <p class="dscr_info">
                 Наша компания получила сертификат DNV, что подтверждает соответствие продукции требованиям стандарта для морских судов и оборудования.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_item">
-
-              <span class="date">
-              15.08.2024
-            </span>
-
-            <img src="/public/image/news1.png"  alt="">
-
-            <div class="dscr">
-              <span class="dscr_title">
-                Наше представительство в России
-              </span>
-
-              <p class="dscr_info">
-                В целях улучшения взаимодействия с нашими партнерами, сокращения логистического плеча мы открыли представительство в России.
               </p>
             </div>
 
