@@ -353,7 +353,7 @@ const tabs = ref(true)
 }
 
 @media screen and (max-width: 1439.99px){
-  
+
 }
 
 @media screen and (max-width: 1199.99px){
@@ -387,9 +387,7 @@ const tabs = ref(true)
   letter-spacing: -1px;
   text-transform: uppercase;
   }
-  .contact-button{
-    
-  }
+
   
 }
 </style>

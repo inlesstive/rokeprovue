@@ -6,12 +6,18 @@ const route = useRoute()
   <section class="news container">
 
       <h1 class="news_title">
-        <span class="sub_title">
-          Актуальные события
-        </span> 
-        <!-- и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  -->
-        ROKE 
+        <div class="news_title-pos">
+          <span class="sub_title">
+              Актуальные события
+            </span> <br>
+            и новинки от&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROKE 
+        </div>
+
+        <div class="news_title mob">
+          <span> Актуальные <br>события </span> roke
+        </div>
       </h1>
+
 
       <div class="all_card">
         <div class="card">
@@ -85,31 +91,38 @@ const route = useRoute()
   bottom: 7px;
 }
 
+.mob{
+      display: none;
+    }
+
 .news_title{
   width: max-content;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  color: #17172D;
+  & .news_title-pos{
+  color: var(---, #17172D);
   font-family: "Century Gothic";
   font-size: 105px;
   font-style: normal;
   font-weight: 700;
   line-height: 90%;
   text-transform: uppercase;
+
+  }
+
 }
 
 .all_card{
   margin-top: 60px;
-  display: flex;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 
 .card{
   background: #F7F7F7;
   display: inline-flex;
-  height: 407px;
+  height: auto;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -120,11 +133,14 @@ const route = useRoute()
 
 .card_item{
   display: flex;
-  width: 573px;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  & img{
+    width: 100%;
+  }
 }
 
 
@@ -164,10 +180,149 @@ const route = useRoute()
 }
 
 .news{
-  padding: 30px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 375.99px){
+
+
+@media screen and (max-width: 1439.99px) {
+  .news_title{
+    & .news_title-pos{
+      font-size: 85px;
+    }
+  }
+  
+  .mob{
+  display: none;
+  }
+
+  .sub_title{
+    font-size: 85px;
+  }
+
+  .all_card{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .news_title::before{
+    width: 160px;
+    right: 220px;
+    bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width: 1199.99px) {
+
+  .mob{
+  display: none;
+}
+
+  .news_title{
+    & .news_title-pos{
+      font-size: 65px;
+    }
+  }
+  .sub_title{
+    font-size: 65px;
+  }
+
+  .news_title::before{
+    width: 120px;
+    right: 170px;
+    bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 991.99px){
+  .dscr_title{
+    font-size: 15px;
+  }
+
+  .dscr_info{
+    font-size: 15px;
+  }
+
+  .date{
+    font-size: 15px;
+  }
+
+  .mob{
+  display: none;
+}
+
+  .news_title{
+    & .news_title-pos{
+      font-size: 55px;
+    }
+  }
+  .sub_title{
+    font-size: 55px;
+  }
+
+  .news_title::before {
+        height: 8px;
+        width: 105px;
+        right: 141px;
+        bottom: 3px;
+  }
+
+}
+
+@media screen and (max-width: 767.99px){
+  .dscr_title{
+    font-size: 12px;
+  }
+
+  .dscr_info{
+    font-size: 13px;
+  }
+
+  .date{
+    font-size: 14px;
+  }
+
+
+  .news_title-pos{
+    display: none;
+  }
+
+  .news_title{
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  }
+  
+  .news_title::before{
+    display: none;
+  }
+
+  .mob{
+    display: block;
+    & span{
+      color: #3064C7;
+      font-family: "Century Gothic";
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; 
+      letter-spacing: -0.8px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 539.99px){
+  .news_title-pos{
+    display: none;
+  }
+
   .news_title{
   color: #000;
   font-family: "Century Gothic";
@@ -177,7 +332,6 @@ const route = useRoute()
   line-height: 100%;
   letter-spacing: -0.8px;
   text-transform: uppercase;
-  width: 355px;
   }
 
   .sub_title{
@@ -196,15 +350,15 @@ const route = useRoute()
   }
 
   .all_card{
-    display: flex;
     gap: 10px;
-    flex-direction: column;
     margin-top: 10px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
   }
+
   .card{
     display: flex;
-    width: 355px;
-    height: auto;
+    width: 100%;
     padding: 10px;
     flex-direction: column;
     gap: 5px;
@@ -216,9 +370,7 @@ const route = useRoute()
 
 
   .card_item img{
-    width: 218px;
-    height: 82px;
-    flex-shrink: 0;
+    max-width: 218px;
   }
 
   .card_item{
@@ -228,7 +380,7 @@ const route = useRoute()
   }
  
   .dscr_title{
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .dscr_info{
@@ -245,6 +397,117 @@ const route = useRoute()
   .news{
     padding: 10px 20px;
   }
+
+  .mob{
+    & span{
+      color: #3064C7;
+      font-family: "Century Gothic";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; 
+      letter-spacing: -0.8px;
+      text-transform: uppercase;
+    }
+  }
+
+
+}
+
+
+@media screen and (max-width: 375.99px){
+  .news_title-pos{
+    display: none;
+  }
+
+  .news_title{
+  color: #000;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  }
+
+  .sub_title{
+  color: #3064C7;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; 
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  }
+
+  .news_title::before{
+    display: none;
+  }
+
+  .all_card{
+    gap: 10px;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  }
+
+  .card{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .date{
+    font-size: 10px;
+  }
+
+
+  .card_item img{
+    max-width: 218px;
+  }
+
+  .card_item{
+    display: flex;
+    gap: 10px;
+    width: auto;
+  }
+ 
+  .dscr_title{
+    font-size: 17px;
+  }
+
+  .dscr_info{
+    width: 311px;
+    font-size: 16px;
+  }
+
+  .dscr{
+    width: auto;
+    display: flex;
+    gap: 5px;
+  }
+
+  .news{
+    padding: 10px 20px;
+  }
+
+  .mob{
+    & span{
+      color: #3064C7;
+      font-family: "Century Gothic";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%; 
+      letter-spacing: -0.8px;
+      text-transform: uppercase;
+    }
+  }
+
 }
 
 </style>

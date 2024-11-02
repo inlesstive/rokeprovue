@@ -182,7 +182,8 @@ const route = useRoute()
 .document{
   display: flex;
   gap:294px;
-  padding: 30px 0px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .right_block{
@@ -235,4 +236,32 @@ const route = useRoute()
   gap: 30px;
 }
 
+@media screen and (max-width: 1439.99px){
+
+}
+
+@media screen and (max-width: 1199.99px){
+
+}
+
+@media screen and (max-width: 991.99px){
+
+}
+
+@media screen and (max-width: 767.99px){
+
+}
+
+@media screen and (max-width: 539.99px){
+
+}
+
+@media screen and (max-width: 424.99px) {
+  
+}
+
+@media screen and (max-width: 375.99px) {
+
+  
+}
 </style>

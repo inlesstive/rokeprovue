@@ -13,7 +13,7 @@
           </div>
           <div class="main__hero-info-title-pos mob">
             <span>Компоненты</span> гидравлики:  надежность и качество!
-          </div>
+          </div>  
           
         </h1>
         <p class="main__hero-info-descr">

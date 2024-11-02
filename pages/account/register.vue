@@ -95,7 +95,8 @@ const route = useRoute()
 
 .register-content_block{
   display: flex;
-  padding: 30px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .placeholders{
@@ -106,7 +107,7 @@ const route = useRoute()
 }
 
 .input{
-  color: v#808080;
+  color: #808080;
   font-family: "Myriad Pro";
   font-size: 24px;
   font-style: normal;
@@ -122,6 +123,123 @@ const route = useRoute()
   &:nth-child(7){
     grid-column: 1 / -1;
   }
+}
+
+@media screen and (max-width: 1439.99px){
+ .register-content_block{
+  flex-direction: column;
+ }
+ .placeholders{
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 1199.99px){
+  .placeholders{
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 991.99px){
+  .placeholders{
+    margin-top: 20px;
+  }
+  .input{
+  font-size: 22px;
+}
+
+ .political-documentation{
+  font-size: 22px;
+  & .link{
+    font-size: 22px;
+  }
+}
+
+}
+
+
+@media screen and (max-width: 767.99px){
+  .placeholders{
+    margin-top: 20px;
+  }
+
+ .title{
+  font-size: 75px;
+ }
+
+ .input{
+  font-size: 20px;
+}
+
+ .political-documentation{
+  font-size: 20px;
+  & .link{
+    font-size: 20px;
+  }
+}
+}
+
+
+@media screen and (max-width: 539.99px){
+  .title{
+    font-size: 55px;
+  }
+
+  .placeholders{
+    margin-top: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .input{
+  font-size: 18px;
+}
+
+ .political-documentation{
+  font-size: 18px;
+  & .link{
+    font-size: 18px;
+  }
+}
+
+}
+
+
+@media screen and (max-width: 424.99px) {
+  .title{
+    font-size: 50px;
+  }
+}
+
+
+@media screen and (max-width: 375.99px) {
+
+.title{
+  font-size: 50px;
+}
+
+.register-content_block{
+  flex-direction: column;
+
+}
+
+.placeholders{
+margin-top: 20px;
+grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+  
+.input{
+  font-size: 18px;
+}
+
+.political-documentation{
+  font-size: 16px;
+  & .link{
+    font-size: 16px;
+  }
+}
+
 }
 
 </style>
