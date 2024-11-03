@@ -1,6 +1,8 @@
 <template>
   <button class="Faq-button">
-    <slot>Оплата/Доставка</slot>
+    <span>
+      <slot>Оплата/Доставка</slot>
+    </span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="10"
@@ -14,7 +16,7 @@
   </button>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .Faq-button {
   display: flex;
   padding: 20px;
@@ -26,13 +28,20 @@
   transition: background-color 0.3s, color 0.3s;
   background-color: white;
   color: #17172d;
-  font-family: "Myriad Pro";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 90%;
-  text-transform: uppercase;
-  text-align: left;
+
+  & span {
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  & svg {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .Faq-button:hover {

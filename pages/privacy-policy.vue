@@ -22,10 +22,8 @@
         <ul class="privacy-policy__list">
           <li class="privacy-policy__list-item">
             <UiButtonFaqButton class="privacy-policy__button">
-              <span class="privacy-policy__button-name"
-                >Основные понятия, используемые в настоящем пользовательском
-                соглашении</span
-              >
+              Основные понятия, используемые в настоящем пользовательском
+              соглашении
             </UiButtonFaqButton>
             <UiButtonFaqButton class="privacy-policy__button">
               1. Общие положения
@@ -300,7 +298,7 @@ export default {
     text-align: left;
   }
   &__button {
-    font-size: 15px;
+    font-size: 20px !important;
   }
   &__back-link {
     display: flex;
