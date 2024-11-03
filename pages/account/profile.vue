@@ -101,52 +101,57 @@
 
         <div v-if="currentTab === 'orders'" class="profile__section">
           <div class="order">
-            <UiButtonAccordion class="order__accordion">
-              23 февраля 2024
-              <UiButtonAccordionItem class="order__item" title="Свернуть">
-                <table class="order__table">
-                  <thead>
-                    <tr>
-                      <th class="order__table-header">Наименование товара</th>
-                      <th class="order__table-header">Описание</th>
-                      <th class="order__table-header">Количество</th>
-                      <th class="order__table-header">Сумма</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="order__row" v-for="_ in 10">
-                      <td class="order__product-name">
-                        Шаровый гидравлический кран
-                      </td>
-                      <td class="order__product-description">
-                        <ul class="order__description-list">
-                          <li class="order__description-item">
-                            <span class="order__description-label"
-                              >Артикул:</span
-                            >
-                            KHB-M16
-                          </li>
-                          <li class="order__description-item">
-                            <span class="order__description-label"
-                              >Материал:</span
-                            >
-                            Нержавеющая сталь
-                          </li>
-                        </ul>
-                      </td>
-                      <td class="order__quantity">1 000</td>
-                      <td class="order__sum">500 000 ₽</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="order__summary">
-                  <span class="order__total-label"
-                    >Товаров на сумму: 1 500 000 ₽</span
-                  >
-                  <h3 class="order__total-heading">Итого: 1 500 000 ₽</h3>
-                </div>
-              </UiButtonAccordionItem>
-            </UiButtonAccordion>
+            <UiButtonAccordionCabinet class="order__accordion">
+              <div class="profile__section-table-wrapper" v-for="_ in 5">
+                <span>23 февраля 2024</span>
+                <UiButtonAccordionItemCabinet
+                  class="order__item"
+                  title="Свернуть"
+                >
+                  <table class="order__table">
+                    <thead>
+                      <tr>
+                        <th class="order__table-header">Наименование товара</th>
+                        <th class="order__table-header">Описание</th>
+                        <th class="order__table-header">Количество</th>
+                        <th class="order__table-header">Сумма</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="order__row" v-for="_ in 10">
+                        <td class="order__product-name">
+                          Шаровый гидравлический кран
+                        </td>
+                        <td class="order__product-description">
+                          <ul class="order__description-list">
+                            <li class="order__description-item">
+                              <span class="order__description-label"
+                                >Артикул:</span
+                              >
+                              KHB-M16
+                            </li>
+                            <li class="order__description-item">
+                              <span class="order__description-label"
+                                >Материал:</span
+                              >
+                              Нержавеющая сталь
+                            </li>
+                          </ul>
+                        </td>
+                        <td class="order__quantity">1 000</td>
+                        <td class="order__sum">500 000 ₽</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="order__summary">
+                    <span class="order__total-label"
+                      >Товаров на сумму: 1 500 000 ₽</span
+                    >
+                    <h3 class="order__total-heading">Итого: 1 500 000 ₽</h3>
+                  </div>
+                </UiButtonAccordionItemCabinet>
+              </div>
+            </UiButtonAccordionCabinet>
           </div>
         </div>
 
@@ -267,7 +272,18 @@ const pageTitle = computed(() => {
 
 
 .profile {
+<<<<<<< HEAD
 
+=======
+  &__section-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & span {
+      margin-left: 20px;
+    }
+  }
+>>>>>>> 39446b69ddd28208b20d2dfb8ba5d5421ca3edb3
   &__logout {
     color: #17172d;
     font-family: "Myriad Pro";
