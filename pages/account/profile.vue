@@ -4,7 +4,7 @@
       {{ pageTitle }}
     </h2>
 
-    <div class="profile__block">
+    <div class="profile__block profile__block-profile">
       <div class="profile__navigation">
         <ul class="profile__menu">
           <li class="profile__menu-item">
@@ -48,7 +48,7 @@
         <span class="profile__logout">Выйти из личного кабинета</span>
       </div>
 
-      <div class="profile__content">
+      <div :class="`profile__content ${currentTab === 'profile' ? 'profile__first-block--content' : ''}`">
         <div
           class="profile__section profile__section--personal-info"
           v-if="currentTab === 'profile'"
@@ -515,6 +515,14 @@ const pageTitle = computed(() => {
 
 
 .profile {
+    &__block-profile{
+        justify-content: space-between;
+    }
+
+    &__first-block--content{
+        
+        flex-basis: 45% !important;
+    }
 
   &__section-table-wrapper {
     display: flex;
@@ -603,6 +611,7 @@ const pageTitle = computed(() => {
     flex-direction: column;
   }
   &__section--password-change {
+    flex-grow: 1;
     margin-bottom: 24px;
   }
   &__block {
