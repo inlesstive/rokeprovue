@@ -20,6 +20,24 @@ const isOpen = ref(false);
 const closeModal = () => {
   isOpen.value = false;
 };
+
+const list = ref([
+  {
+    name: "asdasd",
+    quanity: 1,
+    cost: 500,
+  },
+  {
+    name: "asdasd",
+    quanity: 1,
+    cost: 500,
+  },
+  {
+    name: "asdasd",
+    quanity: 1,
+    cost: 500,
+  },
+]);
 </script>
 
 <template>
@@ -73,15 +91,15 @@ const closeModal = () => {
           </tr>
         </thead>
         <tbody class="typeproduct__content-table-tbody">
-          <tr class="typeproduct__content-table-table-row" v-for="_ in 10">
-            <td class="typeproduct__content-table-td">KHB-M16</td>
+          <tr class="typeproduct__content-table-table-row" v-for="item in list">
+            <td class="typeproduct__content-table-td">{{ item.name }}</td>
             <td class="typeproduct__content-table-td">500</td>
             <td class="typeproduct__content-table-td">6</td>
             <td class="typeproduct__content-table-td">Нержавеющая сталь</td>
             <td class="typeproduct__content-table-td">M16*1.5</td>
             <td class="typeproduct__content-table-td">69</td>
             <td class="typeproduct__content-table-td">100</td>
-            <td class="typeproduct__content-table-td">500</td>
+            <td class="typeproduct__content-table-td">{{ item.cost }}</td>
             <td class="typeproduct__content-table-td">
               <div class="typeproduct__content-modal">
                 <UiIconComents :isActive="false" @click=""></UiIconComents>
@@ -93,7 +111,9 @@ const closeModal = () => {
               </div>
             </td>
             <td class="typeproduct__content-table-td">
-              <UiCounter></UiCounter>
+              <div class="counter">
+                <UiCounter></UiCounter>
+              </div>
             </td>
             <td class="typeproduct__content-table-td">
               <div class="typeproduct__content-table-buttons">
@@ -113,6 +133,11 @@ const closeModal = () => {
 </template>
 
 <style lang="scss" scoped>
+.counter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .typeproduct {
   &__content {
     margin-bottom: 130px;
