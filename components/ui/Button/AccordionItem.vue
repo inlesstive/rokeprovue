@@ -68,7 +68,7 @@
     transition: color 0.3s ease;
 }
 .accordion-title.open {
-  color: #3064C7;
+    color: #3064C7;
     font-family: "Myriad Pro";
     font-size: 20px;
     font-style: normal;
@@ -94,4 +94,5 @@
   .fade-enter, .fade-leave-to {
     opacity: 0;
   }
+
 </style>

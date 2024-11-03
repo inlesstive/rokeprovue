@@ -265,6 +265,10 @@
 }
 
 @media screen and (max-width: 375.99px) {
+  .container{
+    padding: unset;
+  }
+
   .footer_top {
     padding: 20px 10px 30px 10px;
   }
