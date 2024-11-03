@@ -43,7 +43,7 @@
   }
 </script>
   
-<style scoped>
+<style >
   .accordion-item {
     border: 1px solid #D9D9D9;
   }
@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 350px;
+    min-width: 350px;
   }
   .accordion-title {
     color: #17172D;

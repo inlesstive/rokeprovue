@@ -4,7 +4,7 @@
     </button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
     .button{
         padding: 20px;
         display: flex;
