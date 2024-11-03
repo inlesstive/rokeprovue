@@ -151,9 +151,56 @@
         </div>
 
         <div v-if="currentTab === 'favorites'" class="profile__section">
-          <span class="profile__section-title">Избранное</span>
-          <p>Здесь будут отображаться ваши избранные товары.</p>
+            <table class="favorites__table">
+                <thead class="favorites__table-header">
+                    <tr class="favorites__table-row">
+                        <th class="favorites__table-header-item">Товар</th>
+                        <th class="favorites__table-header-item">Описание</th>
+                        <th class="favorites__table-header-item">Количество</th>
+                        <th class="favorites__table-header-item">Цена</th>
+                        <th class="favorites__table-header-item">Купить</th>
+                    </tr>
+                </thead>
+                <tbody class="favorites__table-body">
+                    <tr class="favorites__table-row" v-for="_ in 3">
+                        <td class="favorites__table-row--delete">
+                            <button class="favorites__delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M0.189743 0.391988L0.283446 0.283446C0.62702 -0.0601288 1.16465 -0.0913545 1.5435 0.189743L1.65204 0.283446L10 8.63097L18.348 0.283446C18.7259 -0.0944772 19.3386 -0.0944772 19.7165 0.283446C20.0945 0.661369 20.0945 1.27412 19.7165 1.65204L11.369 10L19.7165 18.348C20.0601 18.6915 20.0914 19.2292 19.8102 19.608L19.7165 19.7165C19.373 20.0601 18.8354 20.0914 18.4565 19.8102L18.348 19.7165L10 11.369L1.65204 19.7165C1.27412 20.0945 0.661369 20.0945 0.283446 19.7165C-0.0944772 19.3386 -0.0944772 18.7259 0.283446 18.348L8.63097 10L0.283446 1.65204C-0.0601288 1.30847 -0.0913545 0.77084 0.189743 0.391988Z" fill="#212121"/>
+                                </svg>
+                            </button>
+                        </td>
+                        <td class="favorites__product-name">
+                            Шаровый гидравлический кран
+                        </td>
+                        <td class="favorites__product-description">
+                            <ul class="favorites__description-list">
+                                <li class="favorites__description-item">
+                                    <span class="favorites__description-label">Артикул:</span>
+                                    KHB-M16
+                                </li>
+                                <li class="favorites__description-item">
+                                    <span class="favorites__description-label">Материал:</span>
+                                    Нержавеющая сталь
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="favorites__counter">
+                            <div class="favorites__counter-controls">
+                                <button class="favorites__counter-button">-</button>
+                                <span class="favorites__counter-value">1</span>
+                                <button class="favorites__counter-button">+</button>
+                            </div>
+                        </td>
+                        <td class="favorites__sum">500 ₽</td>
+                        <td>
+                            <UiButtonSendButton class="favorites__button">Добавить в корзину</UiButtonSendButton>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
 
         <div v-if="currentTab === 'details'" class="profile__section">
           <span class="profile__section-title">Реквизиты</span>
@@ -189,7 +236,38 @@ const pageTitle = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+.favorites{
+    &__table-row{
+        border: 1px solid #D9D9D9;
+    }
+    &__delete{
+        padding: 33px 21px;
+        border: 1px solid #D9D9D9;
+    }
+    &__table-body{
+        border: 1px solid #D9D9D9;
+    }
+    &__table-header{
+    color: #000;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    border: 1px solid #D9D9D9;
+    }
+
+  &__table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+
 .profile {
+
   &__logout {
     color: #17172d;
     font-family: "Myriad Pro";
@@ -198,9 +276,11 @@ const pageTitle = computed(() => {
     font-weight: 400;
     line-height: 100%;
   }
+
   &__block {
     display: flex;
   }
+
   &__title {
     color: #000;
     font-family: "Century Gothic";
