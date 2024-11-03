@@ -14,6 +14,12 @@ const categoryOptions = ref([
   { text: "Высокого давления", value: "high-pressure" },
   // Дополнительные категории
 ]);
+
+const isOpen = ref(false);
+
+const closeModal = () => {
+  isOpen.value = false;
+};
 </script>
 
 <template>
@@ -77,9 +83,18 @@ const categoryOptions = ref([
             <td class="typeproduct__content-table-td">100</td>
             <td class="typeproduct__content-table-td">500</td>
             <td class="typeproduct__content-table-td">
-              <UiIconComents :isActive="true"></UiIconComents>
+              <div class="typeproduct__content-modal">
+                <UiIconComents :isActive="false" @click=""></UiIconComents>
+                <UiModalComments
+                  @closeModal="closeModal"
+                  v-if="isOpen"
+                  class="typeproduct__content-table-modal-acc"
+                ></UiModalComments>
+              </div>
             </td>
-            <td class="typeproduct__content-table-td">Артикул</td>
+            <td class="typeproduct__content-table-td">
+              <UiCounter></UiCounter>
+            </td>
             <td class="typeproduct__content-table-td">
               <div class="typeproduct__content-table-buttons">
                 <button class="typeproduct__content-table-button">
@@ -104,6 +119,12 @@ const categoryOptions = ref([
     &-table {
       border-collapse: collapse;
       width: 100%;
+      &-modal {
+        position: relative;
+        &-acc {
+          position: absolute;
+        }
+      }
       &-buttons {
         display: flex;
         align-items: center;
