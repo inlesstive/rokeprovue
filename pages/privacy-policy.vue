@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
     <section class="privacy-policy container">
         <div class="privacy-policy__header">
@@ -311,6 +310,4 @@ export default {
 
 }
 </style>
-=======
-<template></template>
->>>>>>> 41ce90078da9af8854d51dc477507b98205d9d17
+
