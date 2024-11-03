@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
     <section class="terms-and-conditions container">
        <h2 class="terms-and-conditions__title">
@@ -243,3 +244,6 @@ export default {
 }
 
 </style>
+=======
+<template></template>
+>>>>>>> 41ce90078da9af8854d51dc477507b98205d9d17
