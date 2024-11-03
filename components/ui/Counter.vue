@@ -38,6 +38,7 @@ const decrement = () => {
   }
   &-controls {
     max-width: 110px;
+    flex-grow: 1;
     border: 1px solid #d9d9d9;
     color: #000;
     font-family: "Myriad Pro";
