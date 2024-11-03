@@ -190,13 +190,13 @@
                         </td>
                         <td class="favorites__counter">
                             <div class="favorites__counter-controls">
-                                <button class="favorites__counter-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <button class="favorites__counter-button" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" @click="">
                                         <rect y="6" width="14" height="2" fill="black"/>
                                     </svg>
                                 </button>
                                 <span class="favorites__counter-value">1</span>
-                                <button class="favorites__counter-button">
+                                <button class="favorites__counter-button" >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                         <rect y="6" width="14" height="2" fill="black"/>
                                         <rect x="6" y="14" width="14" height="2" transform="rotate(-90 6 14)" fill="black"/>
@@ -231,7 +231,7 @@
                         </p>
                     </li>
                     <li class="details__list-item">                            
-                            <button class="details__popup-button"> 
+                            <button class="details__popup-button" @click="isOpen=!isOpen"> 
                                 <span>
                                     Добавить новые реквизиты
                                 </span>
@@ -239,9 +239,13 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< Updated upstream
             <UiModal></UiModal>
 =======
           <span class="profile__section-title">Реквизиты</span>
+>>>>>>> Stashed changes
+=======
+            <UiModal v-if="isOpen" @closeModal="closeModal"></UiModal>
 >>>>>>> Stashed changes
         </div>
       </div>
@@ -254,10 +258,18 @@ import { ref } from "vue";
 
 const currentTab = ref("profile");
 
+
+const isOpen = ref(false)
+
+const closeModal = () => {
+    isOpen.value = false;
+};
+
 const setTab = (tab: any) => {
   currentTab.value = tab;
   console.log("Активная вкладка:", tab);
 };
+
 
 const pageTitle = computed(() => {
   switch (currentTab.value) {
