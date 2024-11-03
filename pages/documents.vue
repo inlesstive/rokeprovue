@@ -114,7 +114,6 @@ const route = useRoute();
 
             <h5 class="card_title">РМРС труба</h5>
           </div>
-
           <div class="svg">
             <svg
               xmlns="http://www.w3.org/2000/svg"

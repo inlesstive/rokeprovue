@@ -6,7 +6,7 @@
 
 </template>
 
-<style scoped>
+<style >
 .button{
 
     display: flex;
@@ -29,6 +29,13 @@
 
 .button:hover{
     background: #133E91;
+}
+
+@media screen and (max-width: 375.99px) {
+    .button{
+        font-size: 18px;
+        padding: 15px;
+    }
 }
 
 </style>

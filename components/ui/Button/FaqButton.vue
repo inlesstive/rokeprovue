@@ -14,9 +14,9 @@
 .Faq-button{
     display: flex;
     padding: 20px;
-    justify-content: space-between;
     align-items: center;
-    width: 612px;
+    width: 572px;
+    justify-content: space-between;
     border: 1px solid #D9D9D9;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;

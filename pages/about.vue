@@ -319,7 +319,7 @@ const route = useRoute();
   content: "";
   background: #17172d;
   position: absolute;
-  right: 452px;
+  right: 475px;
   bottom: 7px;
 }
 
@@ -613,13 +613,13 @@ const route = useRoute();
     }
   }
   .about_title::before {
-    width: 158px;
-    height: 9px;
-    content: "";
-    background: #17172d;
-    position: absolute;
-    right: 302px;
-    bottom: 5px;
+    width: 150px;
+        height: 9px;
+        content: "";
+        background: #17172d;
+        position: absolute;
+        right: 322px;
+        bottom: 5px;
   }
 }
 
@@ -643,17 +643,37 @@ const route = useRoute();
     font-size: 62px;
   }
   .about_title::before {
-    width: 141px;
-    height: 9px;
-    content: "";
-    background: #17172d;
-    position: absolute;
-    right: 267px;
-    bottom: 5px;
+    width: 130px;
+      height: 8px;
+      content: "";
+      background: #17172d;
+      position: absolute;
+      right: 290px;
+      bottom: 5px;
   }
   .footer_decision {
     flex-wrap: wrap;
   }
+
+  .decision_title::before {
+    width: 85px;
+    height: 8px;
+    content: "";
+    background: #17172d;
+    position: absolute;
+    right: 345px;
+    bottom: 5px;
+}
+
+.footer_decision_title::before {
+    width: 85px;
+    height: 8px;
+    content: "";
+    background: #17172d;
+    position: absolute;
+    right: 294px;
+    bottom: 5px;
+}
 }
 
 @media screen and (max-width: 991.99px) {
@@ -676,13 +696,13 @@ const route = useRoute();
     font-size: 46px;
   }
   .about_title::before {
-    width: 105px;
-    height: 7px;
-    content: "";
-    background: #17172d;
-    position: absolute;
-    right: 199px;
-    bottom: 3px;
+    width: 95px;
+        height: 6px;
+        content: "";
+        background: #17172d;
+        position: absolute;
+        right: 218px;
+        bottom: 4px;
   }
   .decision {
     flex-direction: column;
@@ -693,6 +713,26 @@ const route = useRoute();
   .dscr {
     width: 100%;
   }
+
+  .decision_title::before {
+        width: 61px;
+        height: 6px;
+        content: "";
+        background: #17172d;
+        position: absolute;
+        right: 252px;
+        bottom: 4px;
+    }
+
+    .footer_decision_title::before {
+        width: 64px;
+        height: 6px;
+        content: "";
+        background: #17172d;
+        position: absolute;
+        right: 214px;
+        bottom: 3px;
+    }
 }
 
 @media screen and (max-width: 767.99px) {

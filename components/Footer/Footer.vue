@@ -376,7 +376,7 @@
 
 
     .list-item{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .political_site {
