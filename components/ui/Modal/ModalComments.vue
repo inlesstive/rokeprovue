@@ -53,7 +53,7 @@
   }
   &__content {
     position: fixed;
-    z-index: 100000000;
+    z-index: 1000001; // Уменьшите на 1, чтобы overlay был поверх
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +67,13 @@
         height: 70px;
         margin-top: 20px;
         resize: none;
+        color: #000;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        padding: 10px;
       }
       &-button {
         padding: 9px 0;
