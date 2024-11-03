@@ -219,6 +219,7 @@
 
 
         <div v-if="currentTab === 'details'" class="profile__section">
+<<<<<<< Updated upstream
             <div class="details">
                 <ul class="details__list">
                     <li class="details__list-item">
@@ -239,6 +240,9 @@
                 </ul>
             </div>
             <UiModal></UiModal>
+=======
+          <span class="profile__section-title">Реквизиты</span>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div>
