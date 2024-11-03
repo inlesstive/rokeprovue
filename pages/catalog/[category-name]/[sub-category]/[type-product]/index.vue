@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from "vue";
+
 const route = useRoute();
 const breadcrumbsData = [
   { text: "Главная", to: "/" },
@@ -12,36 +14,33 @@ const categoryOptions = ref([
   { text: "Запорная арматура", value: "armatura" },
   { text: "Кран шаровый", value: "kran" },
   { text: "Высокого давления", value: "high-pressure" },
-  // Дополнительные категории
 ]);
 
+// Переменная для отслеживания активной модалки
+const activeModalId = ref(false);
+
+const list = ref([
+  { id: 1, name: "asdasd", quantity: 1, cost: 500 },
+  { id: 2, name: "asdasd", quantity: 1, cost: 500 },
+  { id: 3, name: "asdasd", quantity: 1, cost: 500 },
+]);
+
+// Функция для открытия или закрытия модалки
 const isOpen = ref(false);
 
 const closeModal = () => {
   isOpen.value = false;
 };
-
-const list = ref([
-  {
-    name: "asdasd",
-    quanity: 1,
-    cost: 500,
-  },
-  {
-    name: "asdasd",
-    quanity: 1,
-    cost: 500,
-  },
-  {
-    name: "asdasd",
-    quanity: 1,
-    cost: 500,
-  },
-]);
 </script>
 
 <template>
   <section class="typeproduct container">
+    <UiModalComments
+      v-if="isOpen"
+      @closeModal="closeModal"
+      @click.stop
+      class="typeproduct__content-table-modal-acc"
+    ></UiModalComments>
     <UiBreadCrumbs :crumbs="breadcrumbsData"></UiBreadCrumbs>
     <div class="typeproduct__banner">
       <h1><span>Шаровые</span> гидравлические краны</h1>
@@ -50,26 +49,7 @@ const list = ref([
     <div class="typeproduct__filter">
       <h2 class="typeproduct__filter-title">Подбор по параметрам</h2>
       <div class="typeproduct__filters">
-        <UiSelector
-          :options="categoryOptions"
-          v-model="selectedCategory"
-          placeholder="Резьба"
-        />
-        <UiSelector
-          :options="categoryOptions"
-          v-model="selectedCategory"
-          placeholder="Резьба"
-        />
-        <UiSelector
-          :options="categoryOptions"
-          v-model="selectedCategory"
-          placeholder="Резьба"
-        />
-        <UiSelector
-          :options="categoryOptions"
-          v-model="selectedCategory"
-          placeholder="Резьба"
-        />
+        <UiSelector :options="categoryOptions" placeholder="Резьба" />
       </div>
     </div>
 
@@ -91,7 +71,11 @@ const list = ref([
           </tr>
         </thead>
         <tbody class="typeproduct__content-table-tbody">
-          <tr class="typeproduct__content-table-table-row" v-for="item in list">
+          <tr
+            v-for="item in list"
+            :key="item.id"
+            class="typeproduct__content-table-table-row"
+          >
             <td class="typeproduct__content-table-td">{{ item.name }}</td>
             <td class="typeproduct__content-table-td">500</td>
             <td class="typeproduct__content-table-td">6</td>
@@ -101,13 +85,13 @@ const list = ref([
             <td class="typeproduct__content-table-td">100</td>
             <td class="typeproduct__content-table-td">{{ item.cost }}</td>
             <td class="typeproduct__content-table-td">
-              <div class="typeproduct__content-modal">
-                <UiIconComents :isActive="false" @click=""></UiIconComents>
-                <UiModalComments
-                  @closeModal="closeModal"
-                  v-if="isOpen"
-                  class="typeproduct__content-table-modal-acc"
-                ></UiModalComments>
+              <div class="typeproduct__content-table-modal">
+                <button
+                  class="typeproduct__content-table-modal-svg"
+                  @click="isOpen = !isOpen"
+                >
+                  <UiIconComents :isActive="true"></UiIconComents>
+                </button>
               </div>
             </td>
             <td class="typeproduct__content-table-td">
@@ -141,13 +125,15 @@ const list = ref([
 .typeproduct {
   &__content {
     margin-bottom: 130px;
+
     &-table {
       border-collapse: collapse;
       width: 100%;
       &-modal {
         position: relative;
-        &-acc {
-          position: absolute;
+        &-svg {
+          cursor: pointer;
+          background: transparent;
         }
       }
       &-buttons {
