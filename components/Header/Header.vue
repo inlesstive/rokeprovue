@@ -89,16 +89,18 @@ const isOpenPopUp = ref(false);
       <Transition>
         <HeaderBurgerMenu
           class="header__burger-menu"
+          @openpopup="isOpenPopUp = !isOpenPopUp"
           v-if="isOpen"
         ></HeaderBurgerMenu>
       </Transition>
-      <Transition>
-        <HeaderAuthPopUp
-          v-if="isOpenPopUp"
-          class="header__popup"
-        ></HeaderAuthPopUp>
-      </Transition>
     </nav>
+    <Transition>
+      <HeaderAuthPopUp
+        v-if="isOpenPopUp"
+        class="header__popup"
+        @popupclose="isOpenPopUp = false"
+      ></HeaderAuthPopUp>
+    </Transition>
     <div class="header__bottom-search mob">
       <input
         class="header__bottom-search-input"
@@ -111,13 +113,13 @@ const isOpenPopUp = ref(false);
         <UiIconSearch></UiIconSearch>
       </button>
     </div>
-    <Transition>
-      <HeaderCatalogMenu
-        class="header__catalog"
-        v-if="isOpenCatalog"
-      ></HeaderCatalogMenu>
-    </Transition>
   </header>
+  <Transition>
+    <HeaderCatalogMenu
+      class="header__catalog"
+      v-if="isOpenCatalog"
+    ></HeaderCatalogMenu>
+  </Transition>
 </template>
 
 <style lang="scss" scoped>
@@ -140,10 +142,11 @@ const isOpenPopUp = ref(false);
 
 .header__popup {
   position: absolute;
-  right: 0;
-  top: 142px;
-  z-index: 1000;
-  background: #fff;
+  right: 0px;
+
+  top: 143px;
+  z-index: 100500;
+  margin-right: 20px;
 }
 .header__nav {
   position: relative;
@@ -214,6 +217,7 @@ const isOpenPopUp = ref(false);
 $maxwidthrightside: 368px;
 
 .header {
+  position: relative;
   &__nav {
     border: 1px solid #d9d9d9;
     border-top: 0;
@@ -519,6 +523,13 @@ $maxwidthrightside: 368px;
 
   .header__nav-logo {
     padding: 0 36px;
+  }
+  .header__popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
   }
 }
 
