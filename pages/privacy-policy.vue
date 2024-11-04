@@ -270,95 +270,166 @@
   </section>
   <section class="privacy-policy__mob container">
     <h2 class="privacy-policy__mob-title">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ САЙТА</h2>
-    
+
     <div class="privacy-policy__mob-block">
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="Основные понятия, используемые в настоящем пользовательском соглашении" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="Основные понятия, используемые в настоящем пользовательском соглашении"
+          class="privacy-policy__mob--accordion-item"
+        >
           <span class="privacy-policy__mob--accordion-title">
-            В настоящем пользовательском соглашении, если из текста настоящего соглашения прямо не вытекает иное, следующие слова и выражения будут иметь указанные ниже значения:
+            В настоящем пользовательском соглашении, если из текста настоящего
+            соглашения прямо не вытекает иное, следующие слова и выражения будут
+            иметь указанные ниже значения:
           </span>
 
           <ul class="privacy-policy__mob--accordion-list">
             <li class="privacy-policy__mob--accordion-list-item">
-              «Пользователь» — любое физическое лицо и/или юридическое лицо, в том числе посетитель Сайта, принимающий условия настоящего Соглашения.
+              «Пользователь» — любое физическое лицо и/или юридическое лицо, в
+              том числе посетитель Сайта, принимающий условия настоящего
+              Соглашения.
             </li>
             <li class="privacy-policy__mob--accordion-list-item">
-              «Администратор» — ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ЭКОЦЕНТР-СОФТ». (ОГРН 1217700442520).            </li>
+              «Администратор» — ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
+              «ЭКОЦЕНТР-СОФТ». (ОГРН 1217700442520).
+            </li>
             <li class="privacy-policy__mob--accordion-list-item">
-              «Интернет-сайт» или «Сайт» — это совокупность программных и аппаратных средств для ЭВМ, автоматизированная информационная система, доступная в сети Интернет по сетевому адресу https://report.eco-c.ru/. Интернет-сайт принадлежит Администратору.            </li>
+              «Интернет-сайт» или «Сайт» — это совокупность программных и
+              аппаратных средств для ЭВМ, автоматизированная информационная
+              система, доступная в сети Интернет по сетевому адресу
+              https://report.eco-c.ru/. Интернет-сайт принадлежит
+              Администратору.
+            </li>
             <li class="privacy-policy__mob--accordion-list-item">
-              «Сервис» – это программное обеспечение, доступное на Сайте, позволяющее Пользователю использовать предусмотренный для него функционал. Сервис включает в себя интерфейс, программное обеспечение и иные элементы (инструменты, алгоритмы, способы), необходимые для надлежащего функционирования Сайта. Ни одно из положений Договора не может трактоваться как передача исключительных прав на Сервис (его отдельные элементы) Пользователю.            </li>
+              «Сервис» – это программное обеспечение, доступное на Сайте,
+              позволяющее Пользователю использовать предусмотренный для него
+              функционал. Сервис включает в себя интерфейс, программное
+              обеспечение и иные элементы (инструменты, алгоритмы, способы),
+              необходимые для надлежащего функционирования Сайта. Ни одно из
+              положений Договора не может трактоваться как передача
+              исключительных прав на Сервис (его отдельные элементы)
+              Пользователю.
+            </li>
             <li class="privacy-policy__mob--accordion-list-item">
-              «Приложения Администратора» — информационные услуги и Сервисы, предоставляемые посредством Сайта.            </li>
+              «Приложения Администратора» — информационные услуги и Сервисы,
+              предоставляемые посредством Сайта.
+            </li>
           </ul>
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="1. Общие положения" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="1. Общие положения"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="2. Предмет Соглашения" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="2. Предмет Соглашения"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="3. Условия оказания услуг" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="3. Условия оказания услуг"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="4. Регистрация на Сайте" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="4. Регистрация на Сайте"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="5. Права и обязанности Администратора" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="5. Права и обязанности Администратора"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="6. Права и обязанности Пользователя" class="privacy-policy__mob--accordion-item">
-        </UiButtonAccordionItem>
-      </UiButtonAccordion >
-      <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="7. Платные Сервисы Сайта" class="privacy-policy__mob--accordion-item">
-        </UiButtonAccordionItem>
-      </UiButtonAccordion>
-      <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="8. Исключительные права на Сайта и его Сервисы " class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="6. Права и обязанности Пользователя"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="9. Политика конфиденциальности" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="7. Платные Сервисы Сайта"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="10. Согласие на обработку персональных данных Пользователя" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="8. Исключительные права на Сайта и его Сервисы "
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="11. Сайты и контент третьих лиц" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="9. Политика конфиденциальности"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="12. Ответственность Сторон" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="10. Согласие на обработку персональных данных Пользователя"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="13. Срок действия Соглашения" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="11. Сайты и контент третьих лиц"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="14. Порядок разрешения споров и урегулирования претензий" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="12. Ответственность Сторон"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="15. Прочие условия" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="13. Срок действия Соглашения"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
       <UiButtonAccordion class="privacy-policy__mob--accordion">
-        <UiButtonAccordionItem title="16. Реквизиты Администратора Сайта" class="privacy-policy__mob--accordion-item">
+        <UiButtonAccordionItem
+          title="14. Порядок разрешения споров и урегулирования претензий"
+          class="privacy-policy__mob--accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="privacy-policy__mob--accordion">
+        <UiButtonAccordionItem
+          title="15. Прочие условия"
+          class="privacy-policy__mob--accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="privacy-policy__mob--accordion">
+        <UiButtonAccordionItem
+          title="16. Реквизиты Администратора Сайта"
+          class="privacy-policy__mob--accordion-item"
+        >
         </UiButtonAccordionItem>
       </UiButtonAccordion>
     </div>
-    
   </section>
 </template>
 
@@ -377,7 +448,7 @@ export default {
 
 <style lang="scss" scoped>
 .privacy-policy {
-  &__mob{
+  &__mob {
     display: none;
   }
   &__button-name {
@@ -431,7 +502,6 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    max-width: 809px;
   }
   &__content {
     display: flex;
@@ -458,7 +528,6 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 843px;
   }
   &__definition-item {
     color: #17172d;
@@ -485,10 +554,8 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    width: 847px;
   }
   &__rules {
-    width: 843px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -509,14 +576,10 @@ export default {
     font-weight: 400;
     line-height: 100%;
   }
-  &__subject {
-    width: 843px;
-  }
   &__service-conditions {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 843px;
   }
   &__service-condition-item {
     color: #17172d;
@@ -527,19 +590,36 @@ export default {
     line-height: 100%;
   }
 }
+@media screen and (max-width: 1439.99px) {
+}
 
-@media screen and (max-width: 375.99px) {
-  .privacy-policy{
+@media screen and (max-width: 1199.99px) {
+  .privacy-policy__header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+  }
+  .privacy-policy__title {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+}
+
+@media screen and (max-width: 767.99px) {
+  .privacy-policy {
     display: none;
   }
-  .privacy-policy__mob{
-
+  .privacy-policy__mob {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 10px;
     gap: 10px;
-    &-title{
+    &-title {
       color: #000;
       font-family: "Century Gothic";
       font-size: 30px;
@@ -549,33 +629,40 @@ export default {
       letter-spacing: -0.6px;
       text-transform: uppercase;
     }
-    &--accordion-item{
+    &--accordion-item {
       font-size: 16px;
     }
-    &--accordion-title{
-      color:  #17172D;
+    &--accordion-title {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 100%; 
+      line-height: 100%;
     }
-    &--accordion-list{
+    &--accordion-list {
       margin-top: 15px;
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
-    &--accordion-list-item{
-      color:  #17172D;
+    &--accordion-list-item {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 100%; 
+      line-height: 100%;
     }
-    
   }
+}
 
+@media screen and (max-width: 539.99px) {
+}
+
+@media screen and (max-width: 424.99px) {
+}
+
+@media screen and (max-width: 375.99px) {
 }
 </style>

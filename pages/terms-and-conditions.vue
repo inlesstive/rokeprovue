@@ -1,9 +1,6 @@
 <template>
   <section class="terms-and-conditions container">
-    <h2 class="terms-and-conditions__title">
-      Политика <br />
-      конфиденциальности
-    </h2>
+    <h2 class="terms-and-conditions__title">Политика конфиденциальности</h2>
 
     <div class="terms-and-conditions__content">
       <div class="terms-and-conditions__navigation">
@@ -233,67 +230,127 @@
       Политика <br />
       конфиденциальности
     </h2>
-    
+
     <div class="terms-and-conditions__mob-block">
       <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="Основные понятия и термины" class="terms-and-conditions__mob-accordion-item">
-        <span class="terms-and-conditions__mob-accordion-title">
-          Автоматизированная обработка персональных данных - обработка персональных данных с помощью средств вычислительной техники.
-        </span>
+        <UiButtonAccordionItem
+          title="Основные понятия и термины"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+          <span class="terms-and-conditions__mob-accordion-title">
+            Автоматизированная обработка персональных данных - обработка
+            персональных данных с помощью средств вычислительной техники.
+          </span>
 
-        <ul class="terms-and-conditions__mob-accordion-list">
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Информационная система персональных данных - совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств.
-          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Обработка ПД, Обработка персональных данных - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Оператор персональных данных - государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Персональные данные (ПД) - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Пользователь Сайта - лицо, осуществляющее доступ к Сайту посредством сети Интернет на своём устройстве.          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Трансграничная передача персональных данных - передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому лицу или иностранному юридическому лицу.          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            Cookies - небольшой фрагмент данных, отправленный web-сервером и хранимый на компьютере Пользователя Сайта, который web-клиент или webбраузер каждый раз пересылает web-серверу в HTTP-запросе при попытке открыть страницу соответствующего Сайта.          </li>
-          <li class="terms-and-conditions__mob-accordion-list-item">
-            IP-адрес - уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.          </li>
-        </ul>
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="1. Общие положения" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="2. Принципы и правила обработки ПД" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="3. Перечень обрабатываемых ПД Пользователя Сайтаг" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="4. Цели и основания сбора ПД Пользователя Сай" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="5. Способы и сроки обработки ПД" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="6. Права Пользователя Сайта" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="7. Реализованные меры обеспечения безопасности ПД" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
-    <UiButtonAccordion class="terms-and-conditions__mob-accordion">
-      <UiButtonAccordionItem title="8. Дополнительные условия" class="terms-and-conditions__mob-accordion-item">
-      </UiButtonAccordionItem>
-    </UiButtonAccordion>
+          <ul class="terms-and-conditions__mob-accordion-list">
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Информационная система персональных данных - совокупность
+              содержащихся в базах данных персональных данных и обеспечивающих
+              их обработку информационных технологий и технических средств.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Обработка ПД, Обработка персональных данных - любое действие
+              (операция) или совокупность действий (операций), совершаемых с
+              использованием средств автоматизации или без использования таких
+              средств с персональными данными, включая сбор, запись,
+              систематизацию, накопление, хранение, уточнение (обновление,
+              изменение), извлечение, использование, передачу (распространение,
+              предоставление, доступ), обезличивание, блокирование, удаление,
+              уничтожение персональных данных.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Оператор персональных данных - государственный орган,
+              муниципальный орган, юридическое или физическое лицо,
+              самостоятельно или совместно с другими лицами организующие и (или)
+              осуществляющие обработку персональных данных, а также определяющие
+              цели обработки персональных данных, состав персональных данных,
+              подлежащих обработке, действия (операции), совершаемые с
+              персональными данными.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Персональные данные (ПД) - любая информация, относящаяся к прямо
+              или косвенно определенному или определяемому физическому лицу
+              (субъекту персональных данных).
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Пользователь Сайта - лицо, осуществляющее доступ к Сайту
+              посредством сети Интернет на своём устройстве.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Трансграничная передача персональных данных - передача
+              персональных данных на территорию иностранного государства органу
+              власти иностранного государства, иностранному физическому лицу или
+              иностранному юридическому лицу.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              Cookies - небольшой фрагмент данных, отправленный web-сервером и
+              хранимый на компьютере Пользователя Сайта, который web-клиент или
+              webбраузер каждый раз пересылает web-серверу в HTTP-запросе при
+              попытке открыть страницу соответствующего Сайта.
+            </li>
+            <li class="terms-and-conditions__mob-accordion-list-item">
+              IP-адрес - уникальный сетевой адрес узла в компьютерной сети,
+              построенной по протоколу IP.
+            </li>
+          </ul>
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="1. Общие положения"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="2. Принципы и правила обработки ПД"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="3. Перечень обрабатываемых ПД Пользователя Сайтаг"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="4. Цели и основания сбора ПД Пользователя Сай"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="5. Способы и сроки обработки ПД"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="6. Права Пользователя Сайта"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="7. Реализованные меры обеспечения безопасности ПД"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
+      <UiButtonAccordion class="terms-and-conditions__mob-accordion">
+        <UiButtonAccordionItem
+          title="8. Дополнительные условия"
+          class="terms-and-conditions__mob-accordion-item"
+        >
+        </UiButtonAccordionItem>
+      </UiButtonAccordion>
     </div>
   </section>
 </template>
@@ -312,7 +369,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.terms-and-conditions__mob{
+.terms-and-conditions__mob {
   display: none;
 }
 .terms-and-conditions {
@@ -416,45 +473,113 @@ export default {
     font-weight: 400;
     line-height: 100%;
   }
+  .accordion-title {
+    font-size: 16px !important;
+  }
+  .terms-and-conditions__mob-title {
+    font-size: 24px;
+  }
 }
 
-@media screen and (max-width: 375.99px){
-  .terms-and-conditions{
+@media screen and (max-width: 1439.99px) {
+}
+
+@media screen and (max-width: 1199.99px) {
+  .terms-and-conditions__title {
+    font-size: 65px;
+  }
+  .terms-and-conditions__navigation {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .terms-and-conditions__title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .terms-and-conditions__title {
+    font-size: 35px;
+  }
+  .terms-and-conditions {
     display: none;
   }
-  .terms-and-conditions__mob{
+  .terms-and-conditions__mob {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 20px;
     gap: 10px;
-    &-title{
+    &-title {
       color: #000;
       font-family: "Century Gothic";
-      font-size: 28px;
       font-style: normal;
       font-weight: 700;
-      line-height: 100%; 
+      line-height: 100%;
       letter-spacing: -0.56px;
       text-transform: uppercase;
+      text-wrap: wrap;
     }
-    &-accordion-title{
-      color: #17172D;
+    &-accordion-title {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &-accordion-list {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &-accordion-list-item {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+  .terms-and-conditions__mob {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    gap: 10px;
+    &-title {
+      color: #000;
+      font-family: "Century Gothic";
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -0.56px;
+      text-transform: uppercase;
+      text-wrap: wrap;
+    }
+    &-accordion-title {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: 100%;
     }
-    &-accordion-list{
-      
+    &-accordion-list {
       margin-top: 15px;
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
-    &-accordion-list-item{
-      color: #17172D;
+    &-accordion-list-item {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 14px;
       font-style: normal;
@@ -462,5 +587,11 @@ export default {
       line-height: 100%;
     }
   }
+}
+
+@media screen and (max-width: 424.99px) {
+}
+
+@media screen and (max-width: 375.99px) {
 }
 </style>

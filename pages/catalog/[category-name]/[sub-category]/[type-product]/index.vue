@@ -41,7 +41,9 @@ const closeModal = () => {
       @click.stop
       class="typeproduct__content-table-modal-acc"
     ></UiModalComments>
+
     <UiBreadCrumbs :crumbs="breadcrumbsData"></UiBreadCrumbs>
+
     <div class="typeproduct__banner">
       <h1><span>Шаровые</span> гидравлические краны</h1>
       <NuxtImg src="http://localhost:3000/image/product_type.png" />
@@ -49,7 +51,7 @@ const closeModal = () => {
     <div class="typeproduct__filter">
       <h2 class="typeproduct__filter-title">Подбор по параметрам</h2>
       <div class="typeproduct__filters">
-        <UiSelector :options="categoryOptions" placeholder="Резьба" />
+        <!-- <UiSelector :options="categoryOptions" placeholder="Резьба" /> -->
       </div>
     </div>
 
@@ -123,12 +125,48 @@ const closeModal = () => {
   justify-content: center;
 }
 .typeproduct {
+  margin-top: 20px;
+  &__banner {
+    background: #f6f6f6;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    & h1 {
+      color: #000;
+      font-family: "Century Gothic";
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 90%;
+      text-transform: uppercase;
+      text-align: center;
+      max-width: 1280px;
+      & span {
+        color: #3064c7;
+        text-align: center;
+        font-family: "Century Gothic";
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%; /* 90px */
+        text-transform: uppercase;
+      }
+    }
+    & img {
+      max-width: 354px;
+      margin: -15px;
+    }
+  }
   &__content {
     margin-bottom: 130px;
 
     &-table {
-      border-collapse: collapse;
-      width: 100%;
+      & {
+        border-collapse: collapse;
+        width: 100%;
+      }
       &-modal {
         position: relative;
         &-svg {
@@ -164,7 +202,9 @@ const closeModal = () => {
         cursor: pointer;
       }
 
-      border: 1px solid #d9d9d9;
+      & {
+        border: 1px solid #d9d9d9;
+      }
       &-td {
         padding: 20px 0;
         color: #000;

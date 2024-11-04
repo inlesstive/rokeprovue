@@ -1,124 +1,123 @@
 <script setup lang="ts">
-const isOpen = ref(false)
-const isOpenCatalog = ref(false)
+const isOpen = ref(false);
+const isOpenCatalog = ref(false);
+const isOpenPopUp = ref(false);
 </script>
 
-
 <template>
-    <header class="header container">
-        <nav class="header__nav">
-            <NuxtLink to="/" class="header__nav-logo">
-                <NuxtImg src="/image/logo.svg" />
-            </NuxtLink>
-            <div class="header__nav-side">
-                <div class="header__top-bar">
-                <ul class="header__top-bar-list">
-                    <li class="header__top-bar-list-item">
-                        <NuxtLink to="/about">
-                            О компании
-                        </NuxtLink>
-                    </li>
-                    <li class="header__top-bar-list-item">
-                        <NuxtLink to="/about">
-                            Новости
-                        </NuxtLink>
-                    </li>
-                    <li class="header__top-bar-list-item">
-                        <NuxtLink to="/about">
-                            Вопрос/Ответ
-                        </NuxtLink>
-                    </li>
-                    <li class="header__top-bar-list-item">
-                        <NuxtLink to="/about">
-                            Документы
-                        </NuxtLink>
-                    </li>
+  <header class="header container">
+    <nav class="header__nav">
+      <NuxtLink to="/" class="header__nav-logo">
+        <NuxtImg src="/image/logo.svg" />
+      </NuxtLink>
+      <div class="header__nav-side">
+        <div class="header__top-bar">
+          <ul class="header__top-bar-list">
+            <li class="header__top-bar-list-item">
+              <NuxtLink to="/about"> О компании </NuxtLink>
+            </li>
+            <li class="header__top-bar-list-item">
+              <NuxtLink to="/about"> Новости </NuxtLink>
+            </li>
+            <li class="header__top-bar-list-item">
+              <NuxtLink to="/about"> Вопрос/Ответ </NuxtLink>
+            </li>
+            <li class="header__top-bar-list-item">
+              <NuxtLink to="/about"> Документы </NuxtLink>
+            </li>
 
-                    <li class="header__top-bar-list-item">
-                        <NuxtLink to="/about">
-                            Контакты
-                        </NuxtLink>
-                    </li>
-                </ul>
-                <div class="header__top-info">
-                    <NuxtLink to="/about">
-                            +7 (812) 309-86-00
-                    </NuxtLink>
-                    <NuxtLink to="/about">
-                            info@roke.com
-                    </NuxtLink>
-                </div>
-                </div>
-                <div class="header__bottom-bar">
-                    <ul class="header__bottom-popup">
-                        <li class="header__bottom-popup-item">
-                            <NuxtLink to="/about">
-                                PDF-каталог
-                            </NuxtLink>
-                        </li>
-                        <li class="header__bottom-popup-item">
-                            <button @click="isOpenCatalog = !isOpenCatalog">
-                                Каталог
-                            </button>
-                        </li>
-                    </ul>
-                    <div class="header__bottom-search">
-                        <input class="header__bottom-search-input" type="text" placeholder="Что вы хотите найти?" name="" id="">
-                        <button class="header__bottom-search-button">
-                            <UiIconSearch></UiIconSearch>
-                        </button>
-                    </div>
-                    <div class="header__bottom-action">
-                        <div class="header__bottom-action-button">
-                            <div class="header__bottom-action-button-wrap mob-hidden">
-                                <NuxtLink to="/about">
-                                    <UiIconFavorites></UiIconFavorites>
-                                </NuxtLink>
-                            </div>
-                            <div class="header__bottom-action-button-wrap ">
-                                <NuxtLink to="/about">
-                                    <UiIconCart></UiIconCart>
-                                </NuxtLink>
-                            </div>
-                            <div class="header__bottom-action-button-wrap mob-2 ">
-                                <button @click="isOpen = !isOpen">
-                                    <div :class="`menu-icon ${isOpen ? 'active' : ''}`">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </button>
-
-                            </div>
-                            <div class="header__bottom-action-button-wrap mob-hidden">
-                                <button>
-                                    <UiIconUser></UiIconUser>
-                                </button>
-                            </div>
-                            
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Transition>
-                <HeaderBurgerMenu class="header__burger-menu" v-if="isOpen"></HeaderBurgerMenu>
-            </Transition>
-
-            
-
-        </nav>
-        <div class="header__bottom-search mob">
-            <input class="header__bottom-search-input" type="text" placeholder="Что вы хотите найти?" name="" id="">
-            <button class="header__bottom-search-button">
-                <UiIconSearch></UiIconSearch>
-            </button>
+            <li class="header__top-bar-list-item">
+              <NuxtLink to="/about"> Контакты </NuxtLink>
+            </li>
+          </ul>
+          <div class="header__top-info">
+            <NuxtLink to="/about"> +7 (812) 309-86-00 </NuxtLink>
+            <NuxtLink to="/about"> info@roke.com </NuxtLink>
+          </div>
         </div>
-        <Transition>
-                <HeaderCatalogMenu class="header__catalog" v-if="isOpenCatalog"></HeaderCatalogMenu>
-        </Transition>
-    </header>
+        <div class="header__bottom-bar">
+          <ul class="header__bottom-popup">
+            <li class="header__bottom-popup-item">
+              <NuxtLink to="/about"> PDF-каталог </NuxtLink>
+            </li>
+            <li class="header__bottom-popup-item">
+              <button @click="isOpenCatalog = !isOpenCatalog">Каталог</button>
+            </li>
+          </ul>
+          <div class="header__bottom-search">
+            <input
+              class="header__bottom-search-input"
+              type="text"
+              placeholder="Что вы хотите найти?"
+              name=""
+              id=""
+            />
+            <button class="header__bottom-search-button">
+              <UiIconSearch></UiIconSearch>
+            </button>
+          </div>
+          <div class="header__bottom-action">
+            <div class="header__bottom-action-button">
+              <div class="header__bottom-action-button-wrap mob-hidden">
+                <NuxtLink to="/about">
+                  <UiIconFavorites></UiIconFavorites>
+                </NuxtLink>
+              </div>
+              <div class="header__bottom-action-button-wrap">
+                <NuxtLink to="/about">
+                  <UiIconCart></UiIconCart>
+                </NuxtLink>
+              </div>
+              <div class="header__bottom-action-button-wrap mob-2">
+                <button @click="isOpen = !isOpen">
+                  <div :class="`menu-icon ${isOpen ? 'active' : ''}`">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </button>
+              </div>
+              <div class="header__bottom-action-button-wrap mob-hidden">
+                <button @click="isOpenPopUp = !isOpenPopUp">
+                  <UiIconUser></UiIconUser>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Transition>
+        <HeaderBurgerMenu
+          class="header__burger-menu"
+          v-if="isOpen"
+        ></HeaderBurgerMenu>
+      </Transition>
+      <Transition>
+        <HeaderAuthPopUp
+          v-if="isOpenPopUp"
+          class="header__popup"
+        ></HeaderAuthPopUp>
+      </Transition>
+    </nav>
+    <div class="header__bottom-search mob">
+      <input
+        class="header__bottom-search-input"
+        type="text"
+        placeholder="Что вы хотите найти?"
+        name=""
+        id=""
+      />
+      <button class="header__bottom-search-button">
+        <UiIconSearch></UiIconSearch>
+      </button>
+    </div>
+    <Transition>
+      <HeaderCatalogMenu
+        class="header__catalog"
+        v-if="isOpenCatalog"
+      ></HeaderCatalogMenu>
+    </Transition>
+  </header>
 </template>
 
 <style lang="scss" scoped>
@@ -132,29 +131,35 @@ const isOpenCatalog = ref(false)
   opacity: 0;
 }
 
-
 .header__catalog {
-    position: absolute;
-    z-index: 10005;
-    top: 143px;
-    left: 0;
+  position: absolute;
+  z-index: 10005;
+  top: 143px;
+  left: 0;
 }
 
+.header__popup {
+  position: absolute;
+  right: 0;
+  top: 142px;
+  z-index: 1000;
+  background: #fff;
+}
 .header__nav {
-    position: relative;
+  position: relative;
 }
 
 .header__burger-menu {
-    position: absolute;
-    z-index: 5;
-    left: -1px;
+  position: absolute;
+  z-index: 5;
+  left: -1px;
 }
 
 .menu-icon {
-  margin  : 20px auto;
-  width   : 20px;
-  height  : 14px;
-  cursor  : pointer;
+  margin: 20px auto;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
   position: relative;
 }
 
@@ -162,7 +167,7 @@ const isOpenCatalog = ref(false)
   background-color: black;
   height: 2px;
   position: absolute;
-  width : 100%;
+  width: 100%;
   left: 0;
   transition: all 0.3s ease;
   border-radius: 10px;
@@ -198,357 +203,345 @@ const isOpenCatalog = ref(false)
   transform: rotate(-45deg);
 }
 
-
 .mob {
-    display: none !important ;
+  display: none !important ;
 }
 
 .mob-2 {
-    display: none !important;
+  display: none !important;
 }
 
 $maxwidthrightside: 368px;
 
-.header{
-    &__nav {
-        border: 1px solid #D9D9D9;
+.header {
+  &__nav {
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    display: flex;
+    border-right: 0;
+    max-height: 143px;
+    &-side {
+      width: 100%;
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      border: 0.5px solid #d9d9d9;
+      border-bottom: 0;
+      border-left: 0;
+      img {
+        width: clamp(73px, 15vw, 237px);
+        height: auto; // для сохранения пропорций
+      }
+    }
+  }
+  &__top {
+    &-info {
+      display: flex;
+      gap: 45px;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+      max-width: $maxwidthrightside;
+      width: 100%;
+      & a {
+        color: #17172d;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%;
+      }
+    }
+    &-bar {
+      display: flex;
+      border: 1px solid #d9d9d9;
+      border-top: 0;
+      border-left: 0;
+
+      &-list {
+        display: flex;
+        height: 71px;
+        border: 1px solid #d9d9d9;
         border-top: 0;
-        display: flex;
-        border-right: 0;
-        max-height: 143px;
-        &-side {
-            width: 100%
-        }
-        &-logo {
-            display: flex;
-            align-items: center;
-            padding: 0 30px;
-            border: 0.5px solid #D9D9D9;
-            border-bottom: 0;
-            border-left: 0;
-            img {
-                width: clamp(73px, 15vw, 237px); 
-                height: auto; // для сохранения пропорций
-            }
-        }
-    }
-    &__top {
-        &-info {
-            display: flex;
-            gap: 45px;
-            align-items: center;
-            flex-grow: 1;
-            justify-content: center;
-            max-width: $maxwidthrightside;
-            width: 100%;
-            & a {
-                color: #17172D;
-                font-family: "Myriad Pro";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 90%; 
-            }
-        }
-        &-bar {
-            display: flex;
-            border: 1px solid #D9D9D9;
-            border-top: 0;
-            border-left: 0;
-            
-            &-list {
-                display: flex;
-                height: 71px;
-                border: 1px solid #D9D9D9;
-                border-top: 0;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 30px;
-                border-bottom: 0;
-                border-left: 0;
-                width: 100%;
-                &-item {
-
-                    & a {
-                        color: #17172D;
-                        font-family: "Myriad Pro";
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 90%; 
-                        width: max-content;
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-    &__bottom {
-        display: flex;
         align-items: center;
-
-
-    &-search {
-        border-right: 1px solid #D9D9D9;
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-grow: 1; // растягиваем search на всю ширину
-
-        &-input {
-            height: 100%;
-            outline: none;
-            border: none;
-            width: 100%; // делаем input гибким
-            padding: 0 70px 0 30px;
-            color: #D9D9D9;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-bottom: 0;
+        border-left: 0;
+        width: 100%;
+        &-item {
+          & a {
+            color: #17172d;
             font-family: "Myriad Pro";
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: 90%;
+            width: max-content;
+            display: block;
+          }
         }
-        &-button {
-            position: absolute;
-            right: 30px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-        }
+      }
     }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
 
-    &-popup {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    &-search {
+      border-right: 1px solid #d9d9d9;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-grow: 1; // растягиваем search на всю ширину
 
-        &-item {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            border-right: 1px solid #D9D9D9;
-            & a {
-                width: max-content;
-            }
-        }
-
-        & a {
-            color: #17172D;
-            margin: 0 30px;
-            font-family: "Myriad Pro";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 90%;
-            cursor: pointer;
-        }
-
-        & button {
-            color: #17172D;
-            margin: 0 48px;
-            background: transparent;
-            border: none;
-            font-family: "Myriad Pro";
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 90%;
-            cursor: pointer;
-        }
-    }
-
-    &-action {
-        display: flex;
-        align-items: center;
-        margin-left: auto; 
-        max-width: $maxwidthrightside;
-        width: 100%;
-
-        &-button {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            width: 100%;
-
-            &-wrap {
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-right: 1px solid #D9D9D9;
-                flex-grow: 1;
-
-                & a {
-                    padding: 0 30px;
-                }
-
-                & button {
-                    margin: 0 30px;
-                    background: transparent;
-                    border: none;
-                    outline: none;
-                }
-            }
-        }
-    }
-
-    &-bar {
-        display: flex;
-        height: 70px;
-    }
-}
-
-}
-
-
-
-@media screen and (max-width: 1439.99px) {
-    .header__nav-logo {
-        padding: 0 10px;
-        border: 0.5px solid #D9D9D9;
-        border-bottom: 0;
-        border-left: 0;
-    }
-
-    $maxwidthrightside: 310px;
-
-    .header__top-info {
-        max-width: $maxwidthrightside;
-    }
-    .header__bottom-action {
-        max-width: $maxwidthrightside;
-    }
-
-    .header__bottom-popup button {
-        margin: 0 30px;
-    }
-    .header__bottom-popup a {
-        margin: 0 15px;
-    }
-
-    .header__top-bar-list {
-        padding: 0 10px;
-
-    }
-}
-
-@media screen and (max-width: 1199.99px) {
-    $maxwidthrightside: 220px;
-
-    .header__top-info {
-        max-width: $maxwidthrightside;
-    }
-    .header__bottom-action {
-        max-width: $maxwidthrightside;
-    }
-
-    .header__top-info a:last-of-type {
-        display: none;
-    }
-
-    .header__bottom-action-button-wrap button {
-        margin: 0 10px;
-    }
-    .header__bottom-action-button-wrap a {
-        padding: 0 10px;
-    }
-    .header__bottom-popup-item {
-        & a:first-child {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 991.99px) {
-    $maxwidthrightside: 190px;
-
-    .header__top-info {
-        max-width: $maxwidthrightside;
-    }
-    .header__bottom-action {
-        max-width: $maxwidthrightside;
-    }
-    .header__top-bar-list {
-        & li:last-child {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 767.99px) {
-    .header__top-bar-list-item a {
-        font-size: 16px;
-
-    }
-    .header__bottom-search-button {
+      &-input {
+        height: 100%;
+        outline: none;
+        border: none;
+        width: 100%; // делаем input гибким
+        padding: 0 70px 0 30px;
+        color: #d9d9d9;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%;
+      }
+      &-button {
         position: absolute;
-        right: 15px;
+        right: 30px;
         background: transparent;
         border: none;
         cursor: pointer;
-    }
-    .header__bottom-search-input {
-        padding: 0 50px 0 30px;
-    }
-    .header__top-bar-list {
-        display: none;
-    }
-    .header__top-bar {
-        display: none;
-    }
-    .header__bottom-search {
-        display: none
+      }
     }
 
+    &-popup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-    .mob-hidden {
-        display: none;
-    }
-    .mob {
-        display: flex !important;
-        border: 1px solid #D9D9D9;
-        border-top: 0;
-        padding: 15px;
-    }
-    .mob-2 {
-        display: flex !important;
-    }
-    .header__bottom-search-input {
-        padding: 0 50px 0 0px;
+      &-item {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #d9d9d9;
+        & a {
+          width: max-content;
+        }
+      }
+
+      & a {
+        color: #17172d;
+        margin: 0 30px;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90%;
+        cursor: pointer;
+      }
+
+      & button {
+        color: #17172d;
+        margin: 0 48px;
+        background: transparent;
+        border: none;
+        font-family: "Myriad Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90%;
+        cursor: pointer;
+      }
     }
 
-    .header__bottom-bar {
-        height: 44px;
+    &-action {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      max-width: $maxwidthrightside;
+      width: 100%;
+
+      &-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+
+        &-wrap {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: 1px solid #d9d9d9;
+          flex-grow: 1;
+
+          & a {
+            padding: 0 30px;
+          }
+
+          & button {
+            margin: 0 30px;
+            background: transparent;
+            border: none;
+            outline: none;
+          }
+        }
+      }
     }
 
-    .header__nav-logo {
-        padding: 0 36px;
+    &-bar {
+      display: flex;
+      height: 70px;
     }
+  }
+}
+
+@media screen and (max-width: 1439.99px) {
+  .header__nav-logo {
+    padding: 0 10px;
+    border: 0.5px solid #d9d9d9;
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  $maxwidthrightside: 310px;
+
+  .header__top-info {
+    max-width: $maxwidthrightside;
+  }
+  .header__bottom-action {
+    max-width: $maxwidthrightside;
+  }
+
+  .header__bottom-popup button {
+    margin: 0 30px;
+  }
+  .header__bottom-popup a {
+    margin: 0 15px;
+  }
+
+  .header__top-bar-list {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1199.99px) {
+  $maxwidthrightside: 220px;
+
+  .header__top-info {
+    max-width: $maxwidthrightside;
+  }
+  .header__bottom-action {
+    max-width: $maxwidthrightside;
+  }
+
+  .header__top-info a:last-of-type {
+    display: none;
+  }
+
+  .header__bottom-action-button-wrap button {
+    margin: 0 10px;
+  }
+  .header__bottom-action-button-wrap a {
+    padding: 0 10px;
+  }
+  .header__bottom-popup-item {
+    & a:first-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  $maxwidthrightside: 190px;
+
+  .header__top-info {
+    max-width: $maxwidthrightside;
+  }
+  .header__bottom-action {
+    max-width: $maxwidthrightside;
+  }
+  .header__top-bar-list {
+    & li:last-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .header__top-bar-list-item a {
+    font-size: 16px;
+  }
+  .header__bottom-search-button {
+    position: absolute;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .header__bottom-search-input {
+    padding: 0 50px 0 30px;
+  }
+  .header__top-bar-list {
+    display: none;
+  }
+  .header__top-bar {
+    display: none;
+  }
+  .header__bottom-search {
+    display: none;
+  }
+
+  .mob-hidden {
+    display: none;
+  }
+  .mob {
+    display: flex !important;
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 15px;
+  }
+  .mob-2 {
+    display: flex !important;
+  }
+  .header__bottom-search-input {
+    padding: 0 50px 0 0px;
+  }
+
+  .header__bottom-bar {
+    height: 44px;
+  }
+
+  .header__nav-logo {
+    padding: 0 36px;
+  }
 }
 
 @media screen and (max-width: 539.99px) {
-    .header__bottom-popup button {
-        margin: 0 15px;
-    }
-    .header__bottom-action-button-wrap a svg {
-        width: 18px;
-        height: 18px;
-    }
+  .header__bottom-popup button {
+    margin: 0 15px;
+  }
+  .header__bottom-action-button-wrap a svg {
+    width: 18px;
+    height: 18px;
+  }
 
-    .header__nav-logo {
-        padding: 0px 10px;
-    }
+  .header__nav-logo {
+    padding: 0px 10px;
+  }
 }
 
 @media screen and (max-width: 424.99px) {
-    
 }
 
 @media screen and (max-width: 375.99px) {
-    
 }
 
 @media screen and (max-width: 319.99px) {
-    
 }
 </style>

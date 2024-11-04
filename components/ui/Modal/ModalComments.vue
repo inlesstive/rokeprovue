@@ -38,7 +38,7 @@
 </template>
 
 <style lang="scss" scoped>
-.modal {
+ .modal {
   width: 100%;
   height: 100%;
   &__overlay {
