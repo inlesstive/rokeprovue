@@ -399,10 +399,7 @@ const pageTitle = computed(() => {
 
 .favorites{
     &__byer-button{
-        max-width: 279px;
-    }
-    &__buyer{
-        padding: 10px;
+        width: max-content;
     }
     &__sum span{
         color: #000;
@@ -414,14 +411,6 @@ const pageTitle = computed(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &__sum{
-        padding: 10px;
-    }
-
-    &__counter{
-        
-        padding: 10px;
     }
     &__description-list{
         display: flex;
@@ -458,8 +447,10 @@ const pageTitle = computed(() => {
     }
     &__buyer{
         border: 1px solid #D9D9D9;
+        padding: 10px;
     }
     &__sum{
+        padding: 10px;
         border: 1px solid #D9D9D9;
     }
     &__counter-button{
@@ -467,6 +458,7 @@ const pageTitle = computed(() => {
         justify-content: center;
     }
     &__counter{
+        padding: 10px;
         border: 1px solid #D9D9D9;
     }
     &__product-description{
