@@ -1,5 +1,5 @@
 <template>
-    <section class="card container" v-if="true">
+    <section class="card container" v-if="hasItems">
         <div class="card__header">
             <h2 class="card__title">
                 Корзина
