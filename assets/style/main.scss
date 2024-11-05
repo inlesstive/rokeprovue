@@ -1,47 +1,51 @@
-
 @font-face {
-    font-family: "Century Gothic";  
-    src: url("~/assets/Fonts/CenturyGothic/centurygothic_bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
-  }
-  
-@font-face {
-    font-family: "Myriad Pro";  
-    src: url("~/assets/Fonts/MyriadPro/MYRIADPRO-SEMIBOLD.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: 500;
-}
-  
-@font-face {
-    font-family: "Myriad Pro";  
-    src: url("~/assets/Fonts/MyriadPro/MYRIADPRO-REGULAR.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: 400;
+  font-family: "Century Gothic";
+  src: url("~/assets/Fonts/CenturyGothic/centurygothic_bold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
-$primary: #49240F;
-$secondary: #E4A79D;
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("~/assets/Fonts/MyriadPro/MYRIADPRO-SEMIBOLD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
 
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("~/assets/Fonts/MyriadPro/MYRIADPRO-REGULAR.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+$primary: #49240f;
+$secondary: #e4a79d;
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
 }
 
-
-ul, li {
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
