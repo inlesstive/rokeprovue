@@ -1,23 +1,43 @@
 <template>
-  <section class="favorites container" v-if="hasItems">
-    <div class="favorites__header">
-      <h2 class="favorites__title">Избранное</h2>
-      <button class="favorites__clear-button">Очистить избранное</button>
+  <section class="card container" v-if="hasItems">
+    <div class="card__header">
+      <h2 class="card__title">Корзина</h2>
     </div>
 
-    <div class="favorites__section">
-      <UiTableTable2 :type="false"></UiTableTable2>
-    </div>
+    <div class="card__section">
+      <UiTableTable2></UiTableTable2>
+      <div class="card__block">
+        <div class="card__summary">
+          <h3 class="card__total">
+            Итого
+            <span class="card__total-amount">1 000 ₽</span>
+          </h3>
+          <h4 class="card__subtotal">
+            Товаров на сумму
+            <span class="card__subtotal-amount">1 000 ₽</span>
+          </h4>
 
-    <button class="favorites__clear-button-mob">Очистить избранное</button>
+          <UiButtonSendButton class="card__checkout-button"
+            >Перейти к оформлению</UiButtonSendButton
+          >
+
+          <button class="card__clear-button">Очистить корзину</button>
+        </div>
+
+        <span class="card__auth-message"
+          >Для управления заказами необходима
+          <a href="" class="card__auth-link">авторизация</a></span
+        >
+      </div>
+    </div>
   </section>
-  <section class="favorites__second container" v-else>
-    <div class="favorites__second-block">
-      <h2 class="favorites__second-title">Вы не добавили ни одного товара</h2>
-      <span class="favorites__second-subtitle">
-        Подберите интересующие вас товары в разделе каталог
+  <section class="card__second container" v-else>
+    <div class="card__second-block">
+      <h2 class="card__second-title">Вы не добавили ни одного товара</h2>
+      <span class="card__second-subtitle">
+        Подберите интересующие вас товары в корзину
       </span>
-      <UiButtonSendButton class="favorites__second-button"
+      <UiButtonSendButton class="card__second-button"
         >Перейти в каталог</UiButtonSendButton
       >
     </div>
@@ -38,10 +58,74 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.favorites {
+<style lang="scss" scoped>
+.card {
+  margin-bottom: 20px;
+  &__summary {
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+  }
+  &__total {
+    color: #000;
+    font-family: "Myriad Pro";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__subtotal {
+    color: #000;
+    font-family: "Myriad Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__clear-button {
+    margin-top: 20px;
+    color: #3064c7;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    border-bottom: 1px solid #3064c7;
+    padding: 2px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  &__auth-link {
+    color: #3064c7;
+    font-family: "Myriad Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  &__auth-message {
+    color: #000;
+    font-family: "Myriad Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   &__section {
-    overflow-x: auto;
+    display: flex;
+    gap: 20px;
   }
   &__second {
     &-subtitle {
@@ -81,7 +165,6 @@ export default {
   }
   & {
     padding-top: 30px;
-    padding-bottom: 30px;
   }
   &__comment {
     height: 100%;
@@ -100,18 +183,6 @@ export default {
       background-color: transparent;
     }
   }
-  &__clear-button {
-    color: #3064c7;
-    font-family: "Myriad Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    background-color: white;
-    max-width: 216px;
-    max-height: 24px;
-    cursor: pointer;
-  }
   &__title {
     color: #000;
     font-family: "Century Gothic";
@@ -126,8 +197,6 @@ export default {
     justify-content: space-between;
     padding-bottom: 30px;
     align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 20px;
   }
   &__byer-button {
     width: max-content;
@@ -185,6 +254,8 @@ export default {
     font-weight: 400;
     line-height: 100%;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
   }
   &__buyer {
     border: 1px solid #d9d9d9;
@@ -224,6 +295,7 @@ export default {
     border-right: 1px solid #d9d9d9;
   }
   &__table-body {
+    height: 100px;
     border: 1px solid #d9d9d9;
   }
   &__table-header {
@@ -242,56 +314,57 @@ export default {
     border-collapse: collapse;
     border: 1px solid #d9d9d9;
   }
+  &__product-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    & * {
+      height: 100%;
+    }
+  }
 }
-
 @media screen and (max-width: 1439.99px) {
 }
 
 @media screen and (max-width: 1199.99px) {
-}
-
-@media screen and (max-width: 991.99px) {
-  .favorites__title {
-    color: #000;
-    font-family: "Century Gothic";
-    font-size: 69px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90%;
-    text-transform: uppercase;
+  .card__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  .card__section {
+    overflow-x: auto;
+  }
+  .card__second-title {
+    text-align: center;
+  }
+  .card__second-subtitle {
+    text-align: center;
   }
 }
 
+@media screen and (max-width: 991.99px) {
+}
+
 @media screen and (max-width: 767.99px) {
-  .favorites__clear-button {
-    display: none;
-    &-mob {
-      margin-top: 20px;
-      border-radius: 2px;
-      border: 1px solid #d9d9d9;
-      background: #fff;
-      width: 100%;
-      color: #17172d;
-      font-family: "Myriad Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 100%; /* 16px */
-      text-transform: uppercase;
-      padding: 15px;
+  .card__auth-message {
+    font-size: 20px;
+    & a {
+      font-size: 20px;
     }
   }
 }
 
 @media screen and (max-width: 539.99px) {
-  .favorites__title {
-    color: #000;
-    font-family: "Century Gothic";
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90%;
-    text-transform: uppercase;
+  .card__title {
+    font-size: 67px;
   }
 }
 
@@ -299,9 +372,6 @@ export default {
 }
 
 @media screen and (max-width: 375.99px) {
-  .favorites__title {
-    font-size: 38px;
-  }
 }
 
 @media screen and (max-width: 319.99px) {

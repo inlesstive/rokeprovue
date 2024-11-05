@@ -56,64 +56,7 @@ const closeModal = () => {
     </div>
 
     <div class="typeproduct__content">
-      <table class="typeproduct__content-table">
-        <thead class="typeproduct__content-table-thead">
-          <tr class="typeproduct__content-table-table-row">
-            <th class="typeproduct__content-table-th">Артикул</th>
-            <th class="typeproduct__content-table-th">PN</th>
-            <th class="typeproduct__content-table-th">DN</th>
-            <th class="typeproduct__content-table-th">Материал</th>
-            <th class="typeproduct__content-table-th">Резьба</th>
-            <th class="typeproduct__content-table-th">Размер L</th>
-            <th class="typeproduct__content-table-th">В наличии</th>
-            <th class="typeproduct__content-table-th">Цена</th>
-            <th class="typeproduct__content-table-th">Комментарий</th>
-            <th class="typeproduct__content-table-th">Количество</th>
-            <th class="typeproduct__content-table-th">Купить</th>
-          </tr>
-        </thead>
-        <tbody class="typeproduct__content-table-tbody">
-          <tr
-            v-for="item in list"
-            :key="item.id"
-            class="typeproduct__content-table-table-row"
-          >
-            <td class="typeproduct__content-table-td">{{ item.name }}</td>
-            <td class="typeproduct__content-table-td">500</td>
-            <td class="typeproduct__content-table-td">6</td>
-            <td class="typeproduct__content-table-td">Нержавеющая сталь</td>
-            <td class="typeproduct__content-table-td">M16*1.5</td>
-            <td class="typeproduct__content-table-td">69</td>
-            <td class="typeproduct__content-table-td">100</td>
-            <td class="typeproduct__content-table-td">{{ item.cost }}</td>
-            <td class="typeproduct__content-table-td">
-              <div class="typeproduct__content-table-modal">
-                <button
-                  class="typeproduct__content-table-modal-svg"
-                  @click="isOpen = !isOpen"
-                >
-                  <UiIconComents :isActive="true"></UiIconComents>
-                </button>
-              </div>
-            </td>
-            <td class="typeproduct__content-table-td">
-              <div class="counter">
-                <UiCounter></UiCounter>
-              </div>
-            </td>
-            <td class="typeproduct__content-table-td">
-              <div class="typeproduct__content-table-buttons">
-                <button class="typeproduct__content-table-button">
-                  В корзину
-                </button>
-                <button class="typeproduct__content-table-favorite">
-                  <UiIconFavorites></UiIconFavorites>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <UiTableTable2></UiTableTable2>
     </div>
   </section>
 </template>

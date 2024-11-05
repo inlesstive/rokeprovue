@@ -37,7 +37,7 @@ const decrement = () => {
     background-color: white;
   }
   &-controls {
-    max-width: 110px;
+    max-width: 143px;
     flex-grow: 1;
     border: 1px solid #d9d9d9;
     color: #000;
@@ -49,6 +49,8 @@ const decrement = () => {
     display: flex;
     justify-content: space-between;
     padding: 11px;
+    background: #fff;
+    align-items: center;
   }
 }
 </style>
