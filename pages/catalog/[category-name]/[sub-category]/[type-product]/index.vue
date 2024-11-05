@@ -51,7 +51,43 @@ const closeModal = () => {
     <div class="typeproduct__filter">
       <h2 class="typeproduct__filter-title">Подбор по параметрам</h2>
       <div class="typeproduct__filters">
-        <!-- <UiSelector :options="categoryOptions" placeholder="Резьба" /> -->
+        <UiSelector :options="categoryOptions" placeholder="Резьба" />
+      </div>
+      <div class="typeproduct__filters-mobile">
+        <button class="typeproduct__filters-mobile-button-filter">
+          Фильтры
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="10"
+            viewBox="0 0 13 10"
+            fill="none"
+          >
+            <path
+              d="M1.24957 8.38785C1.66355 8.38785 1.99915 8.74873 1.99915 9.19393C1.99915 9.63913 1.66355 10 1.24957 10C0.835598 10 0.5 9.63913 0.5 9.19393C0.5 8.74873 0.835598 8.38785 1.24957 8.38785ZM3.35 8.71046H12.05C12.2985 8.71046 12.5 8.92713 12.5 9.19438C12.5 9.43937 12.3307 9.64184 12.1111 9.67391L12.05 9.67829H3.35C3.10147 9.67829 2.9 9.46163 2.9 9.19438C2.9 8.94939 3.06929 8.74692 3.28894 8.71485L3.35 8.71046ZM1.24957 4.19393C1.66355 4.19393 1.99915 4.5548 1.99915 5C1.99915 5.4452 1.66355 5.80607 1.24957 5.80607C0.835598 5.80607 0.5 5.4452 0.5 5C0.5 4.5548 0.835598 4.19393 1.24957 4.19393ZM3.35 4.51654H12.05C12.2985 4.51654 12.5 4.7332 12.5 5.00045C12.5 5.24544 12.3307 5.44791 12.1111 5.47998L12.05 5.48437H3.35C3.10147 5.48437 2.9 5.2677 2.9 5.00045C2.9 4.75546 3.06929 4.55299 3.28894 4.52092L3.35 4.51654ZM1.24957 0C1.66355 0 1.99915 0.360891 1.99915 0.806066C1.99915 1.25124 1.66355 1.61213 1.24957 1.61213C0.835598 1.61213 0.5 1.25124 0.5 0.806066C0.5 0.360891 0.835598 0 1.24957 0ZM3.35 0.32261H12.05C12.2985 0.32261 12.5 0.539268 12.5 0.806524C12.5 1.05151 12.3307 1.25398 12.1111 1.28602L12.05 1.29044H3.35C3.10147 1.29044 2.9 1.07378 2.9 0.806524C2.9 0.561535 3.06929 0.359071 3.28894 0.327029L3.35 0.32261Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <button class="typeproduct__filters-mobile-button-popular">
+          По популярности
+          <svg
+            width="13"
+            height="12"
+            viewBox="0 0 13 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.75251 11.7475C2.8892 11.8842 3.1108 11.8842 3.24749 11.7475L5.47487 9.5201C5.61156 9.38342 5.61156 9.16181 5.47487 9.02513C5.33819 8.88844 5.11658 8.88844 4.9799 9.02513L3 11.005L1.0201 9.02513C0.883417 8.88844 0.661809 8.88844 0.525126 9.02513C0.388442 9.16181 0.388442 9.38342 0.525126 9.5201L2.75251 11.7475ZM2.65 0.5L2.65 11.5L3.35 11.5L3.35 0.5L2.65 0.5Z"
+              fill="black"
+            />
+            <path
+              d="M9.75251 0.252513C9.8892 0.115829 10.1108 0.115829 10.2475 0.252513L12.4749 2.4799C12.6116 2.61658 12.6116 2.83819 12.4749 2.97487C12.3382 3.11156 12.1166 3.11156 11.9799 2.97487L10 0.994975L8.0201 2.97487C7.88342 3.11156 7.66181 3.11156 7.52513 2.97487C7.38844 2.83819 7.38844 2.61658 7.52513 2.4799L9.75251 0.252513ZM9.65 11.5L9.65 0.5L10.35 0.5L10.35 11.5L9.65 11.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -104,6 +140,7 @@ const closeModal = () => {
   }
   &__content {
     margin-bottom: 130px;
+    overflow-x: auto;
 
     &-table {
       & {
@@ -196,5 +233,97 @@ const closeModal = () => {
       width: 100%;
     }
   }
+}
+
+@media screen and (max-width: 1439.99px) {
+}
+
+@media screen and (max-width: 1199.99px) {
+}
+
+@media screen and (max-width: 991.99px) {
+  .typeproduct__banner h1 {
+    font-size: 87px;
+    & span {
+      font-size: 87px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .typeproduct__banner h1 {
+    font-size: 60px;
+    & span {
+      font-size: 60px;
+    }
+  }
+  .typeproduct__banner img {
+    max-width: 274px;
+    margin: -15px;
+  }
+  .typeproduct__filters {
+    display: none;
+  }
+  .typeproduct__filter-title {
+    display: none;
+  }
+  .typeproduct__filters-mobile {
+    display: flex;
+    gap: 10px;
+    &-button-filter {
+      display: flex;
+      width: 100%;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background: #3064c7;
+      color: #fff;
+      font-family: "Myriad Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &-button-popular {
+      display: flex;
+      width: 100%;
+      padding: 10px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background: #fff;
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 14px */
+    }
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+  .typeproduct__banner h1 {
+    font-size: 45px;
+    & span {
+      font-size: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 424.99px) {
+  .typeproduct__banner h1 {
+    font-size: 39px;
+    & span {
+      font-size: 39px;
+    }
+  }
+}
+
+@media screen and (max-width: 375.99px) {
+}
+
+@media screen and (max-width: 319.99px) {
 }
 </style>

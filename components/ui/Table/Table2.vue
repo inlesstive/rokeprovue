@@ -137,7 +137,7 @@ defineProps({
       </tbody>
     </table>
 
-    <div class="card__mobile">
+    <div class="card__mobile" v-if="type">
       <div class="card__mobile-list" v-for="_ in 5">
         <div class="card__mobile-list-header">Артикул: <b>KHB-M16</b></div>
         <div class="card__mobile-list-content">
@@ -154,6 +154,44 @@ defineProps({
           <div class="card__mobile-list-footer-price">Цена: <b>500 ₽</b></div>
           <div class="card__mobile-list-footer-action">
             <UiCounter></UiCounter>
+            <button class="card__mobile-list-footer-action-button">
+              <UiIconComents :isActive="true"></UiIconComents>
+            </button>
+            <button class="card__mobile-list-footer-action-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="30"
+                viewBox="0 0 34 30"
+                fill="none"
+              >
+                <path
+                  d="M18.39 2.73611L16.9951 4.16302L15.5957 2.73482C12.028 -0.906693 6.24355 -0.906693 2.67582 2.73482C-0.891939 6.37632 -0.891939 12.2804 2.67582 15.9219L16.0954 29.6189C16.5932 30.127 17.4004 30.127 17.8983 29.6189L31.3281 15.9193C34.888 12.2658 34.8941 6.37828 31.3258 2.73611C27.7515 -0.912036 21.9642 -0.912036 18.39 2.73611Z"
+                  fill="#3064C7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card__mobile" v-if="!type">
+      <div class="card__mobile-list" v-for="_ in 5">
+        <div class="card__mobile-list-header">Артикул: <b>KHB-M16</b></div>
+        <div class="card__mobile-list-content">
+          <h3 class="card__mobile-list-content-title">
+            Шаровый гидравлический кран PN 500 DN 6 M16*5
+          </h3>
+          <ul class="card__mobile-list-content-list">
+            <li class="card__mobile-list-content-list-item">
+              <span>Материал: </span><b>Нержавеющая сталь</b>
+            </li>
+          </ul>
+        </div>
+        <div class="card__mobile-list-footer">
+          <div class="card__mobile-list-footer-price">Цена: <b>500 ₽</b></div>
+          <div class="card__mobile-list-footer-action">
+            <UiButtonSendButton>Добавить в корзину</UiButtonSendButton>
             <button class="card__mobile-list-footer-action-button">
               <UiIconComents :isActive="true"></UiIconComents>
             </button>
