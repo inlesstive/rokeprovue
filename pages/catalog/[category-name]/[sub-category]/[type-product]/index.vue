@@ -43,7 +43,6 @@ const closeModal = () => {
     ></UiModalComments>
 
     <UiBreadCrumbs :crumbs="breadcrumbsData"></UiBreadCrumbs>
-
     <div class="typeproduct__banner">
       <h1><span>Шаровые</span> гидравлические краны</h1>
       <NuxtImg src="http://localhost:3000/image/product_type.png" />
@@ -102,6 +101,9 @@ const closeModal = () => {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+.typeproduct__filters-mobile {
+  display: none;
 }
 .typeproduct {
   margin-top: 20px;
@@ -231,6 +233,7 @@ const closeModal = () => {
       flex-grow: 1;
       gap: 30px;
       width: 100%;
+      margin-top: 15px;
     }
   }
 }
@@ -269,6 +272,7 @@ const closeModal = () => {
   }
   .typeproduct__filters-mobile {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     &-button-filter {
       display: flex;
@@ -310,18 +314,28 @@ const closeModal = () => {
       font-size: 45px;
     }
   }
+  .typeproduct__banner img {
+    max-width: 200px;
+    margin: -15px;
+  }
 }
 
 @media screen and (max-width: 424.99px) {
   .typeproduct__banner h1 {
-    font-size: 39px;
+    font-size: 35px;
     & span {
-      font-size: 39px;
+      font-size: 35px;
     }
   }
 }
 
 @media screen and (max-width: 375.99px) {
+  .typeproduct__banner h1 {
+    font-size: 30px;
+    & span {
+      font-size: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 319.99px) {
