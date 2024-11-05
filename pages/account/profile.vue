@@ -3,7 +3,7 @@
     <UiBreadCrumbs :crumbs="breadcrumbsData" class="breadcrumbs">
     </UiBreadCrumbs>
     <h2 class="profile__title">
-      {{ pageTitle }}
+      {{ breadcrumbsData[breadcrumbsData.length - 1].text }}
     </h2>
 
     <div class="profile__block profile__block-profile">
@@ -50,6 +50,95 @@
         <span class="profile__logout">Выйти из личного кабинета</span>
       </div>
     </div>
+
+    <div class="personal__account mob">
+      <div class="personal__account-data mob">
+        Личные данные
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+            fill="#17172D"
+          />
+          <path
+            d="M13 11.5L13 0.5L0.999999 0.5"
+            stroke="#17172D"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="personal__account-orders mob">
+        История заказов
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+            fill="#17172D"
+          />
+          <path
+            d="M13 11.5L13 0.5L0.999999 0.5"
+            stroke="#17172D"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="presonal__account-elect mob">
+        Избранное
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+            fill="#17172D"
+          />
+          <path
+            d="M13 11.5L13 0.5L0.999999 0.5"
+            stroke="#17172D"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="personal__account-details mob">
+        Реквизиты
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+            fill="#17172D"
+          />
+          <path
+            d="M13 11.5L13 0.5L0.999999 0.5"
+            stroke="#17172D"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <span class="profile__logout">Выйти из личного кабинета</span>
+    </div>
+
   </section>
 </template>
 
@@ -57,9 +146,9 @@
 import { ref } from "vue";
 
 const breadcrumbsData = [
-  { text: 'Профиль', to: '/'},
-  { text: 'Личные данные', to: '/'},
-]
+  { text: "Профиль", to: "/" },
+  { text: "Личный кабинет", to: "/" },
+];
 
 const currentTab = ref("profile");
 
@@ -89,7 +178,10 @@ const pageTitle = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.breadcrumbs{
+.mob {
+  display: none;
+}
+.breadcrumbs {
   display: none;
 }
 
@@ -98,14 +190,13 @@ const pageTitle = computed(() => {
   color: white;
 }
 .profile {
-    &__block-profile{
-        justify-content: space-between;
-    }
+  &__block-profile {
+    justify-content: space-between;
+  }
 
-    &__first-block--content{
-        
-        flex-basis: 45% !important;
-    }
+  &__first-block--content {
+    flex-basis: 45% !important;
+  }
 
   &__section-table-wrapper {
     display: flex;
@@ -199,6 +290,61 @@ const pageTitle = computed(() => {
   }
   &__block {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 375.99px) {
+  .personal__account-elect{
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #D9D9D9;
+    }
+  .personal__account{
+    &{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 99px;
+    }
+    &-data{
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #D9D9D9;
+      border-bottom: 1px solid #D9D9D9;
+    }
+    &-details{
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #D9D9D9;
+      margin-bottom: 20px;
+    }
+    &-orders{
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #D9D9D9;
+    }
+
+  }
+  .mob{
+    display: flex;
+  }
+  .profile {
+    &__block {
+      display: none;
+    }
+    &__title {
+      width: 100%;
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
   }
 }
 </style>

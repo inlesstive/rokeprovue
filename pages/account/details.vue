@@ -2,11 +2,14 @@
   <div class="flex container">
     <UiBreadCrumbs :crumbs="breadcrumbsData" class="breadcrumbs">
     </UiBreadCrumbs>
-    <h2 class="profile__title">
-      {{ breadcrumbsData[breadcrumbsData.length - 1].tex }}
-    </h2>
-    <div>
-
+    <div class="section">
+        <h2 class="profile__title">
+            {{  breadcrumbsData[breadcrumbsData.length - 1].text }}
+        </h2>
+        <div class="block flex">
+            <ProfileNavigation></ProfileNavigation>
+            <ProfileDetails></ProfileDetails>
+        </div>
     </div>
   </div>
 </template>
@@ -20,6 +23,19 @@ const breadcrumbsData = [
 </script>
 
 <style lang="scss" >
+.block{
+    margin-top: 30px;
+    display: flex;
+}
+
+.section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .profile__title{
     color: #000;
     font-family: "Century Gothic";
@@ -28,6 +44,7 @@ const breadcrumbsData = [
     font-weight: 700;
     line-height: 90%;
     text-transform: uppercase;
+
 
 }
 
