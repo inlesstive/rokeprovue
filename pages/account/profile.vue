@@ -1,5 +1,7 @@
 <template>
   <section class="profile container">
+    <UiBreadCrumbs :crumbs="breadcrumbsData" class="breadcrumbs">
+    </UiBreadCrumbs>
     <h2 class="profile__title">
       {{ pageTitle }}
     </h2>
@@ -54,6 +56,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+const breadcrumbsData = [
+  { text: 'Профиль', to: '/'},
+  { text: 'Личные данные', to: '/'},
+]
+
 const currentTab = ref("profile");
 
 const isOpen = ref(false);
@@ -82,6 +89,9 @@ const pageTitle = computed(() => {
 </script>
 
 <style lang="scss" scoped>
+.breadcrumbs{
+  display: none;
+}
 
 .contacts__tab-button--active {
   background: #3064c7;

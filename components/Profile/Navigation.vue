@@ -51,18 +51,7 @@ const setTab = (tab: any) => {
   console.log("Активная вкладка:", tab);
 };
 
-const pageTitle = computed(() => {
-  switch (currentTab.value) {
-    case "orders":
-      return "История заказов";
-    case "favorites":
-      return "Избранное";
-    case "details":
-      return "Реквизиты";
-    default:
-      return "Профиль пользователя";
-  }
-});
+
 </script>
 
 <style lang="scss">
