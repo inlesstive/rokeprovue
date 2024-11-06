@@ -134,10 +134,12 @@ const closeModal = () => {
     gap: 20px;
     flex-direction: column;
   }
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  & {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   &__message {
     color: #000;
     font-family: "Myriad Pro";
@@ -171,6 +173,24 @@ const closeModal = () => {
   &__popup-button:hover {
     background-color: #3064c7;
     color: white;
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .details__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .details__cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .details__card[data-v-65f97821] {
+    max-width: 100%;
   }
 }
 </style>

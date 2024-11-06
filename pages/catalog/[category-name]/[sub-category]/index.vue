@@ -16,7 +16,7 @@ const route = useRoute();
                 class="subcategory__content-list-item-content-list-item"
                 v-for="_ in 3"
               >
-                <NuxtLink to="/">Круглый корпус</NuxtLink>
+                <NuxtLink to="/catalog/123/123/123">Круглый корпус</NuxtLink>
               </li>
             </ul>
             <div class="subcategory__content-list-item-content-img">
@@ -334,6 +334,12 @@ const route = useRoute();
 @media screen and (max-width: 539.99px) {
   .subcategory__title {
     font-size: 45px;
+  }
+  .profile__navigation[data-v-062f0fcd] {
+    display: flex;
+    flex-basis: 100%;
+    gap: 30px;
+    flex-direction: column;
   }
 }
 

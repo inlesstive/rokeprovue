@@ -1,15 +1,29 @@
 <template>
   <div class="accordion-item">
     <div class="accordion-header" @click="toggle">
-      <p class="accordion-header-order-num">Номер заказа: А-07663578</p>
-      <div class="accordion-header-order-wrapper">
-        <NuxtLink class="accordion-header-order-download-doc" to="/">
-          Скачать документы
-        </NuxtLink>
-        <p class="accordion-header-order-status">
-          Статус заказа:
-          <span>Завершен</span>
-        </p>
+      <div class="desktop">
+        <p class="accordion-header-order-num">Номер заказа: А-07663578</p>
+        <div class="accordion-header-order-wrapper">
+          <NuxtLink class="accordion-header-order-download-doc" to="/">
+            Скачать документы
+          </NuxtLink>
+          <p class="accordion-header-order-status">
+            Статус заказа:
+            <span>Завершен</span>
+          </p>
+        </div>
+      </div>
+      <div class="mob">
+        <p class="accordion-header-order-num">Номер заказа: А-07663578</p>
+        <div class="accordion-header-order-wrapper">
+          <NuxtLink class="accordion-header-order-download-doc" to="/">
+            <UiButtonSendButton>Скачать документ </UiButtonSendButton>
+          </NuxtLink>
+          <p class="accordion-header-order-status">
+            Статус заказа:
+            <span>Завершен</span>
+          </p>
+        </div>
       </div>
       <div class="accordion-header-button-hide">
         <h3 class="accordion-title" :class="{ open: isOpen }">{{ title }}</h3>
@@ -151,6 +165,7 @@ export default {
 .accordion-content {
   padding: 20px;
   background: #f7f7f7;
+  overflow-x: auto;
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -159,5 +174,48 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+.mob {
+  display: none;
+}
+
+@media screen and (max-width: 1439.99px) {
+}
+
+@media screen and (max-width: 1199.99px) {
+}
+
+@media screen and (max-width: 991.99px) {
+}
+
+@media screen and (max-width: 767.99px) {
+  .accordion-title {
+    display: none;
+  }
+  .accordion-header-order-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mob {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+}
+
+@media screen and (max-width: 424.99px) {
+}
+
+@media screen and (max-width: 375.99px) {
+}
+
+@media screen and (max-width: 319.99px) {
 }
 </style>

@@ -218,7 +218,8 @@ defineProps({
 
 <style lang="scss" scoped>
 section {
-  flex-grow: 1;
+  overflow-x: auto;
+  width: 100%;
 }
 .card__mobile {
   display: flex;

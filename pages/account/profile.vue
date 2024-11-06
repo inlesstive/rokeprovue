@@ -15,7 +15,10 @@
                 currentTab === 'profile' ? 'contacts__tab-button--active' : ''
               }`"
               @click="setTab('profile')"
-              >Личные данные</UiButtonProfileButton
+            >
+              <NuxtLink to="/account/personaldata">
+                Личный данные
+              </NuxtLink></UiButtonProfileButton
             >
           </li>
           <li class="profile__menu-item">
@@ -24,8 +27,9 @@
                 currentTab === 'orders' ? 'contacts__tab-button--active' : ''
               }`"
               @click="setTab('orders')"
-              >История заказов</UiButtonProfileButton
             >
+              <NuxtLink to="/account/orders"> История заказов </NuxtLink>
+            </UiButtonProfileButton>
           </li>
           <li class="profile__menu-item">
             <UiButtonProfileButton
@@ -33,7 +37,10 @@
                 currentTab === 'favorites' ? 'contacts__tab-button--active' : ''
               }`"
               @click="setTab('favorites')"
-              >Избранное</UiButtonProfileButton
+            >
+              <NuxtLink to="/account/favorites">
+                Избранное
+              </NuxtLink></UiButtonProfileButton
             >
           </li>
           <li class="profile__menu-item">
@@ -42,8 +49,9 @@
                 currentTab === 'details' ? 'contacts__tab-button--active' : ''
               }`"
               @click="setTab('details')"
-              >Реквизиты</UiButtonProfileButton
             >
+              <NuxtLink to="/account/details"> реквизиты </NuxtLink>
+            </UiButtonProfileButton>
           </li>
         </ul>
 
@@ -52,93 +60,99 @@
     </div>
 
     <div class="personal__account mob">
-      <div class="personal__account-data mob">
-        Личные данные
-        <svg
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
-            fill="#17172D"
-          />
-          <path
-            d="M13 11.5L13 0.5L0.999999 0.5"
-            stroke="#17172D"
-            stroke-linecap="square"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <div class="personal__account-orders mob">
-        История заказов
-        <svg
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
-            fill="#17172D"
-          />
-          <path
-            d="M13 11.5L13 0.5L0.999999 0.5"
-            stroke="#17172D"
-            stroke-linecap="square"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <div class="presonal__account-elect mob">
-        Избранное
-        <svg
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
-            fill="#17172D"
-          />
-          <path
-            d="M13 11.5L13 0.5L0.999999 0.5"
-            stroke="#17172D"
-            stroke-linecap="square"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <div class="personal__account-details mob">
-        Реквизиты
-        <svg
-          width="14"
-          height="13"
-          viewBox="0 0 14 13"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
-            fill="#17172D"
-          />
-          <path
-            d="M13 11.5L13 0.5L0.999999 0.5"
-            stroke="#17172D"
-            stroke-linecap="square"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
+      <NuxtLink to="/account/personaldata">
+        <div class="personal__account-data mob">
+          Личные данные
+          <svg
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+              fill="#17172D"
+            />
+            <path
+              d="M13 11.5L13 0.5L0.999999 0.5"
+              stroke="#17172D"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </NuxtLink>
+      <NuxtLink to="/account/orders">
+        <div class="personal__account-data mob">
+          История заказов
+          <svg
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+              fill="#17172D"
+            />
+            <path
+              d="M13 11.5L13 0.5L0.999999 0.5"
+              stroke="#17172D"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg></div
+      ></NuxtLink>
+      <NuxtLink to="/account/favorites">
+        <div class="personal__account-data mob">
+          Избранное
+          <svg
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+              fill="#17172D"
+            />
+            <path
+              d="M13 11.5L13 0.5L0.999999 0.5"
+              stroke="#17172D"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </NuxtLink>
+      <NuxtLink to="/account/details">
+        <div class="personal__account-data mob">
+          Реквизиты
+          <svg
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.33786 11.8686L0.969285 12.2064L0.29356 11.4693L0.662137 11.1314L1.33786 11.8686ZM12.6621 0.131423C12.8657 -0.0551739 13.182 -0.0414219 13.3686 0.162137C13.5552 0.365697 13.5414 0.681981 13.3379 0.868577L12.6621 0.131423ZM0.662137 11.1314L12.6621 0.131423L13.3379 0.868577L1.33786 11.8686L0.662137 11.1314Z"
+              fill="#17172D"
+            />
+            <path
+              d="M13 11.5L13 0.5L0.999999 0.5"
+              stroke="#17172D"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </NuxtLink>
       <span class="profile__logout">Выйти из личного кабинета</span>
     </div>
-
   </section>
 </template>
 
@@ -188,6 +202,9 @@ const pageTitle = computed(() => {
 .contacts__tab-button--active {
   background: #3064c7;
   color: white;
+  & a {
+    color: white !important;
+  }
 }
 .profile {
   &__block-profile {
@@ -210,10 +227,11 @@ const pageTitle = computed(() => {
   &__logout {
     color: #17172d;
     font-family: "Myriad Pro";
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+    margin-top: 20px;
   }
 
   &__block {
@@ -233,7 +251,7 @@ const pageTitle = computed(() => {
   }
   &__navigation {
     display: flex;
-    flex-basis: 20%;
+    flex-basis: 50%;
     gap: 30px;
     flex-direction: column;
   }
@@ -293,46 +311,71 @@ const pageTitle = computed(() => {
   }
 }
 
-@media screen and (max-width: 375.99px) {
-  .personal__account-elect{
-      padding: 20px 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #D9D9D9;
+.profile__menu-item {
+  & button {
+    & a {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 90%;
+      text-transform: uppercase;
     }
-  .personal__account{
-    &{
+  }
+}
+
+@media screen and (max-width: 1439.99px) {
+}
+
+@media screen and (max-width: 1199.99px) {
+}
+
+@media screen and (max-width: 991.99px) {
+}
+
+@media screen and (max-width: 767.99px) {
+  .personal__account-elect {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .personal__account {
+    & {
       display: flex;
       flex-direction: column;
       margin-bottom: 99px;
+      & a {
+        color: #000;
+        &:first-child {
+          border-top: 1px solid #d9d9d9;
+        }
+        border-bottom: 1px solid #d9d9d9;
+      }
     }
-    &-data{
+    &-data {
       padding: 20px 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid #D9D9D9;
-      border-bottom: 1px solid #D9D9D9;
     }
-    &-details{
+    &-details {
       padding: 20px 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #D9D9D9;
+
       margin-bottom: 20px;
     }
-    &-orders{
+    &-orders {
       padding: 20px 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #D9D9D9;
     }
-
   }
-  .mob{
+  .mob {
     display: flex;
   }
   .profile {
@@ -346,5 +389,25 @@ const pageTitle = computed(() => {
       margin-top: 10px;
     }
   }
+}
+
+@media screen and (max-width: 539.99px) {
+}
+
+@media screen and (max-width: 424.99px) {
+  .profile__title {
+    color: #000;
+    font-family: "Century Gothic";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 59px;
+  }
+}
+
+@media screen and (max-width: 375.99px) {
 }
 </style>

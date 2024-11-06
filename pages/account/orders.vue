@@ -16,12 +16,12 @@
 
 <script setup>
 const breadcrumbsData = [
-  { text: "Профиль", to: "/" },
-  { text: "История заказов", to: "/" },
+  { text: "Профиль", to: "/account/profile" },
+  { text: "История заказов", to: "/account/orders" },
 ];
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .block {
   margin-top: 30px;
   display: flex;
@@ -47,5 +47,44 @@ const breadcrumbsData = [
 
 .breadcrumbs {
   display: none;
+}
+
+.accordion-content {
+  padding: 20px;
+  background: #f7f7f7;
+  overflow-x: auto !important;
+}
+
+@media screen and (max-width: 1439.99px) {
+}
+
+@media screen and (max-width: 1199.99px) {
+}
+
+@media screen and (max-width: 991.99px) {
+  .profile__title {
+    font-size: 79px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .breadcrumbs {
+    display: block;
+    margin-top: 20px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .profile__title {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+}
+
+@media screen and (max-width: 424.99px) {
 }
 </style>

@@ -60,7 +60,8 @@ const toggleMode = ref(true);
   flex-direction: column;
   max-width: 510px;
   width: 100%;
-
+  border: 1px solid #d9d9d9;
+  border-top: 0;
   gap: 30px;
   &__flex {
     display: flex;

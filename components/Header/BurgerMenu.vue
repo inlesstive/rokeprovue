@@ -22,16 +22,16 @@
         <NuxtLink to="/"> Главная </NuxtLink>
       </li>
       <li class="header__menu-list-item">
-        <NuxtLink to="/"> О компании </NuxtLink>
+        <NuxtLink to="/about"> О компании </NuxtLink>
       </li>
       <li class="header__menu-list-item">
-        <NuxtLink to="/"> Документы </NuxtLink>
+        <NuxtLink to="/documents"> Документы </NuxtLink>
       </li>
       <li class="header__menu-list-item">
-        <NuxtLink to="/"> Новости </NuxtLink>
+        <NuxtLink to="/news"> Новости </NuxtLink>
       </li>
       <li class="header__menu-list-item">
-        <NuxtLink to="/"> Контакты </NuxtLink>
+        <NuxtLink to="/contacts"> Контакты </NuxtLink>
       </li>
     </ul>
     <span class="header__menu-list-title">
@@ -64,7 +64,7 @@
           stroke-width="2"
         />
       </svg>
-      <NuxtLink to="/"> Избранное </NuxtLink>
+      <NuxtLink to="/favourites"> Избранное </NuxtLink>
     </span>
     <div class="header__menu-info">
       <NuxtLink to="tel:+78123098600">+7 (812) 309-86-00</NuxtLink>

@@ -17,28 +17,30 @@ const isOpenPopUp = ref(false);
               <NuxtLink to="/about"> О компании </NuxtLink>
             </li>
             <li class="header__top-bar-list-item">
-              <NuxtLink to="/about"> Новости </NuxtLink>
+              <NuxtLink to="/news"> Новости </NuxtLink>
             </li>
             <li class="header__top-bar-list-item">
-              <NuxtLink to="/about"> Вопрос/Ответ </NuxtLink>
+              <NuxtLink to="/faq"> Вопрос/Ответ </NuxtLink>
             </li>
             <li class="header__top-bar-list-item">
-              <NuxtLink to="/about"> Документы </NuxtLink>
+              <NuxtLink to="/documents"> Документы </NuxtLink>
             </li>
 
             <li class="header__top-bar-list-item">
-              <NuxtLink to="/about"> Контакты </NuxtLink>
+              <NuxtLink to="/contacts"> Контакты </NuxtLink>
             </li>
           </ul>
           <div class="header__top-info">
-            <NuxtLink to="/about"> +7 (812) 309-86-00 </NuxtLink>
-            <NuxtLink to="/about"> info@roke.com </NuxtLink>
+            <NuxtLink to="tel:+7 (812) 309-86-00">
+              +7 (812) 309-86-00
+            </NuxtLink>
+            <NuxtLink to="emailto:info@roke.com"> info@roke.com </NuxtLink>
           </div>
         </div>
         <div class="header__bottom-bar">
           <ul class="header__bottom-popup">
             <li class="header__bottom-popup-item">
-              <NuxtLink to="/about"> PDF-каталог </NuxtLink>
+              <NuxtLink to="/documents"> PDF-каталог </NuxtLink>
             </li>
             <li class="header__bottom-popup-item">
               <button @click="isOpenCatalog = !isOpenCatalog">Каталог</button>
@@ -59,12 +61,12 @@ const isOpenPopUp = ref(false);
           <div class="header__bottom-action">
             <div class="header__bottom-action-button">
               <div class="header__bottom-action-button-wrap mob-hidden">
-                <NuxtLink to="/about">
+                <NuxtLink to="/favourites">
                   <UiIconFavorites></UiIconFavorites>
                 </NuxtLink>
               </div>
               <div class="header__bottom-action-button-wrap">
-                <NuxtLink to="/about">
+                <NuxtLink to="/cart">
                   <UiIconCart></UiIconCart>
                 </NuxtLink>
               </div>

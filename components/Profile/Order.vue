@@ -52,7 +52,7 @@
     max-width: 1563px;
   }
   &__table {
-    width: 100%;
+    width: max-content;
     background-color: white;
     border-collapse: collapse;
     border: 1px solid #d9d9d9;
@@ -132,6 +132,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   &__total-label {
     color: #000;

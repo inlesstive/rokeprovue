@@ -16,12 +16,12 @@
 
 <script setup>
 const breadcrumbsData = [
-  { text: "Профиль", to: "/" },
-  { text: "Избранные", to: "/" },
+  { text: "Профиль", to: "/account/profile" },
+  { text: "Избранные", to: "/account/favorites" },
 ];
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .block {
   margin-top: 30px;
 }
@@ -46,5 +46,29 @@ const breadcrumbsData = [
 
 .breadcrumbs {
   display: none;
+}
+@media screen and (max-width: 767.99px) {
+  .breadcrumbs {
+    display: block;
+    margin-top: 15px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .profile__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+}
+
+@media screen and (max-width: 424.99px) {
+  .profile__title {
+    font-size: 39px;
+  }
+}
+
+@media screen and (max-width: 375.99px) {
 }
 </style>

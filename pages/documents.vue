@@ -273,15 +273,40 @@ const route = useRoute();
 }
 
 @media screen and (max-width: 991.99px) {
+  .document {
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 70px;
+  }
 }
 
 @media screen and (max-width: 767.99px) {
+  .title {
+    font-size: 55px;
+  }
+  .card_top {
+    flex-wrap: wrap;
+  }
+  .first_block {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    height: max-content;
+  }
+  .document {
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 539.99px) {
 }
 
 @media screen and (max-width: 424.99px) {
+  .title {
+    font-size: 39px;
+  }
 }
 
 @media screen and (max-width: 375.99px) {

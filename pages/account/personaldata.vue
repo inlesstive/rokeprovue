@@ -21,12 +21,12 @@
 
 <script setup>
 const breadcrumbsData = [
-  { text: "Профиль", to: "/" },
-  { text: "Профиль пользователя", to: "/" },
+  { text: "Профиль", to: "/account/profile" },
+  { text: "Профиль пользователя", to: "/account/personaldata" },
 ];
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .mob {
   display: none;
 }
@@ -51,22 +51,56 @@ const breadcrumbsData = [
   font-weight: 700;
   line-height: 90%;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 .breadcrumbs {
   display: none;
 }
 
-@media screen and (max-width: 375.99px) {
-.profile__title{
-    font-size: 40px;
+@media screen and (max-width: 1439.99px) {
 }
+
+@media screen and (max-width: 1199.99px) {
+}
+
+@media screen and (max-width: 991.99px) {
+  .profile__title {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .profile__title {
+    font-size: 65px;
+  }
+  .breadcrumbs {
+    display: block;
+    margin-top: 20px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+  .profile__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 424.99px) {
+}
+@media screen and (max-width: 375.99px) {
+  .profile__title {
+    font-size: 35px;
+  }
   .mob {
     display: flex;
     &__presonal-data {
       flex-basis: 100%;
     }
   }
-  .breadcrumbs{
+  .breadcrumbs {
     margin: 15px 0px;
     display: block;
   }
@@ -74,10 +108,8 @@ const breadcrumbsData = [
     display: none;
   }
 }
-.flex{
-    flex-direction: column;
-}
-.section{
-    margin-top: unset;
+
+.section {
+  margin-top: unset;
 }
 </style>

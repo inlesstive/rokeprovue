@@ -9,7 +9,9 @@
             <NuxtImg
               src="https://s3-alpha-sig.figma.com/img/dd0a/2591/8d22c237f9fbe72d5f285936427f8a90?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=psHHXlNFJfO2n6~KXNgozs7CYsns3SlH9vRIvpP5x9Z-~0GBSYEVJbG2~ArcbYhfzGohTVbdMRf8Ch9avrK-oYnXQl4wNWLqR9thXLgrKJRMsaU7DSmx12mOzFmIUmijy7V-mLod~88WU4779jk49k0rcDbWbDGfq7NsT2bZokLpPN0N2adC3-b8P3bZLa~6ELU~Qj7WgMYa-ohDPIzyNQniNGz8DlhMuVu~8Hn5lqVFrOeXQcyXpoM222uKh6wtIKQf7qsemEv40O-WnULUwQGnot73G~BS5MmLxW4UGRt4teN5WY69HiVTzAcrEYOpbK-ptec-eO0l2H~i2Ndkmw__"
             ></NuxtImg>
-            <span>DIN 2353</span>
+            <span>
+              <NuxtLink to="/catalog/123/123">DIN 2353</NuxtLink>
+            </span>
           </li>
           <li class="header__catalog-menu-list-item active">
             <NuxtImg
@@ -84,12 +86,14 @@
       }
 
       & span {
-        color: #000;
-        font-family: "Myriad Pro";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 90%; /* 16.2px */
+        & a {
+          color: #000;
+          font-family: "Myriad Pro";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 90%; /* 16.2px */
+        }
       }
     }
   }
