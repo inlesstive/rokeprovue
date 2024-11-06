@@ -27,4 +27,11 @@
     background-color: #3064c7;
   }
 }
+
+@media screen and (max-width: 991.99px) {
+  .button{
+    font-size: 16px;
+  }
+}
+
 </style>

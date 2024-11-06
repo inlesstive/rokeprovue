@@ -497,6 +497,40 @@ export default {
   .terms-and-conditions__title {
     font-size: 55px;
   }
+  .terms-and-conditions__section-title {
+    color: #17172d;
+    font-family: "Century Gothic";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+  }
+  .terms-and-conditions__term {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .terms-and-conditions__rule {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .terms-and-conditions__principle {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 
 @media screen and (max-width: 767.99px) {

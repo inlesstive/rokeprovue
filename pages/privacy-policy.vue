@@ -591,6 +591,13 @@ export default {
   }
 }
 @media screen and (max-width: 1439.99px) {
+  .privacy-policy__header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1199.99px) {
@@ -604,9 +611,111 @@ export default {
   .privacy-policy__title {
     font-size: 65px;
   }
+  .privacy-policy__section-title {
+    color: #17172d;
+    font-family: "Century Gothic";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+  }
+  .privacy-policy__definition-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .privacy-policy__rule-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__service-condition-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__section-desciption {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .privacy-policy__subject-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 
 @media screen and (max-width: 991.99px) {
+  .privacy-policy__service-condition-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__subject-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__rule-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__definition-item {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .privacy-policy__section-title {
+    color: #17172d;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+  }
+  .privacy-policy__section-desciption {
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
 
 @media screen and (max-width: 767.99px) {

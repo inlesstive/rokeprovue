@@ -267,14 +267,31 @@ const route = useRoute();
 }
 
 @media screen and (max-width: 1439.99px) {
+  .document {
+    gap: 50px;
+  }
+  .card_top {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1199.99px) {
+  .document {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .card_top {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 991.99px) {
   .document {
     flex-wrap: wrap;
+    gap: 50px;
+  }
+  .card_top {
+    flex-direction: column;
   }
   .title {
     font-size: 70px;
@@ -306,6 +323,9 @@ const route = useRoute();
 @media screen and (max-width: 424.99px) {
   .title {
     font-size: 39px;
+  }
+  .block_title {
+    font-size: 30px;
   }
 }
 

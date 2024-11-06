@@ -108,6 +108,15 @@
 }
 
 @media screen and (max-width: 1439.99px) {
+  .mainforus__top-title-pos::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 8px;
+    background: #17172d;
+    right: 334px;
+    bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 1199.99px) {

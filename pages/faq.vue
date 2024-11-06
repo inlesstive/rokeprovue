@@ -1,16 +1,15 @@
 <script>
 const route = useRoute();
 
-import Accordion from '../components/ui/Button/Accordion.vue';
-import AccordionItem from '../components/ui/Button/AccordionItem.vue';
+import Accordion from "../components/ui/Button/Accordion.vue";
+import AccordionItem from "../components/ui/Button/AccordionItem.vue";
 
 export default {
   components: {
     Accordion,
-    AccordionItem
-  }
-}
-
+    AccordionItem,
+  },
+};
 </script>
 
 <template>
@@ -27,15 +26,23 @@ export default {
             <UiButtonFaqButton></UiButtonFaqButton>
             <UiButtonFaqButton>Изолированные фитинги</UiButtonFaqButton>
             <UiButtonFaqButton>Трубные соединения</UiButtonFaqButton>
-            <UiButtonFaqButton>Гидравлические фитинги и клапаны</UiButtonFaqButton>
+            <UiButtonFaqButton
+              >Гидравлические фитинги и клапаны</UiButtonFaqButton
+            >
             <UiButtonFaqButton>Быстроразъемные соединения</UiButtonFaqButton>
-            <UiButtonFaqButton>Бесшовные трубы из нержавеющей стали</UiButtonFaqButton>
+            <UiButtonFaqButton
+              >Бесшовные трубы из нержавеющей стали</UiButtonFaqButton
+            >
             <UiButtonFaqButton>Электромагнитные клапаны</UiButtonFaqButton>
             <UiButtonFaqButton>Цапфовый шаровой кран</UiButtonFaqButton>
             <UiButtonFaqButton>Типы заглушек для труб</UiButtonFaqButton>
-            <UiButtonFaqButton>Угловой фитинг с наружной резьбой</UiButtonFaqButton>
+            <UiButtonFaqButton
+              >Угловой фитинг с наружной резьбой</UiButtonFaqButton
+            >
             <UiButtonFaqButton>Двойные муфтовые соединения</UiButtonFaqButton>
-            <UiButtonFaqButton>Рабочие характеристики клапанов и фитингов</UiButtonFaqButton>
+            <UiButtonFaqButton
+              >Рабочие характеристики клапанов и фитингов</UiButtonFaqButton
+            >
           </li>
         </ul>
       </div>
@@ -104,9 +111,9 @@ export default {
       <div class="faq__insulated"></div>
     </div>
 
-    <div class="faq__mobile ">
-      <h2 class="faq__mobile-title">FAQ</h2>    
-      <Accordion class="faq__mobile-accordion"> 
+    <div class="faq__mobile">
+      <h2 class="faq__mobile-title">FAQ</h2>
+      <Accordion class="faq__mobile-accordion">
         <AccordionItem title="Оплата/Доставка">
           <div class="faq__accordion-content">
             <div class="faq__question">
@@ -114,7 +121,10 @@ export default {
                 Как происходит покупка товара?
               </span>
               <p class="faq__answer">
-                Мы работаем только с юридическими лицами. Вы можете приобрести товар у нас через сайт, по телефону или по электронной почте. После получения реквизитов и заказа мы выставляем счет для оплаты и спецификацию.
+                Мы работаем только с юридическими лицами. Вы можете приобрести
+                товар у нас через сайт, по телефону или по электронной почте.
+                После получения реквизитов и заказа мы выставляем счет для
+                оплаты и спецификацию.
               </p>
             </div>
 
@@ -123,7 +133,8 @@ export default {
                 Какие у вас условия оплаты?
               </span>
               <p class="faq__answer">
-                Как правило, мы работаем по 100% предоплате, но возможны другие варианты оплаты, которые обсуждаются индивидуально.
+                Как правило, мы работаем по 100% предоплате, но возможны другие
+                варианты оплаты, которые обсуждаются индивидуально.
               </p>
             </div>
 
@@ -132,9 +143,19 @@ export default {
                 Как у вас осуществляется доставка?
               </span>
               <ul class="faq__answer-list">
-                <li>1. Самовывоз со склада по адресу г. Санкт-Петербург, ул. Латышских Стрелков 27 в рабочие дни с 9.00 до 18.00</li>
-                <li>2. Бесплатную доставку (кроме крупногабаритных грузов) до терминала ТК «Деловые линии» в Санкт-Петербурге.</li>
-                <li>3. Доставку по России ТК «Деловые линии» до терминала в вашем городе. Срок доставки от 2 до 5 дней с момента отправки. Стоимость доставки оплачивается покупателем.</li>
+                <li>
+                  1. Самовывоз со склада по адресу г. Санкт-Петербург, ул.
+                  Латышских Стрелков 27 в рабочие дни с 9.00 до 18.00
+                </li>
+                <li>
+                  2. Бесплатную доставку (кроме крупногабаритных грузов) до
+                  терминала ТК «Деловые линии» в Санкт-Петербурге.
+                </li>
+                <li>
+                  3. Доставку по России ТК «Деловые линии» до терминала в вашем
+                  городе. Срок доставки от 2 до 5 дней с момента отправки.
+                  Стоимость доставки оплачивается покупателем.
+                </li>
               </ul>
             </div>
 
@@ -143,14 +164,13 @@ export default {
                 Какие документы нужны для самовывоза?
               </span>
               <p class="faq__answer">
-                Документ, удостоверяющий личность, доверенность или печать организации.
+                Документ, удостоверяющий личность, доверенность или печать
+                организации.
               </p>
             </div>
 
             <div class="faq__question">
-              <span class="faq__question-text">
-                У вас есть гарантия?
-              </span>
+              <span class="faq__question-text"> У вас есть гарантия? </span>
               <p class="faq__answer">
                 Мы предоставляем годовую гарантию на нашу продукцию.
               </p>
@@ -159,44 +179,37 @@ export default {
         </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Изолированные фитинги">
-        </AccordionItem>
+        <AccordionItem title="Изолированные фитинги"> </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Трубные соединения">
-        </AccordionItem>
+        <AccordionItem title="Трубные соединения"> </AccordionItem>
       </Accordion>
       <Accordion>
         <AccordionItem title="Гидравлические фитинги и клапаны">
         </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Быстроразъемные соединения">
-        </AccordionItem>
+        <AccordionItem title="Быстроразъемные соединения"> </AccordionItem>
       </Accordion>
       <Accordion>
         <AccordionItem title="Бесшовные трубы из нержавеющей стали">
         </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Электромагнитные клапаны">
-        </AccordionItem>
+        <AccordionItem title="Электромагнитные клапаны"> </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Цапфовый шаровой кран">
-        </AccordionItem>
+        <AccordionItem title="Цапфовый шаровой кран"> </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Типы заглушек для труб">
-        </AccordionItem>
+        <AccordionItem title="Типы заглушек для труб"> </AccordionItem>
       </Accordion>
       <Accordion>
         <AccordionItem title="Угловой фитинг с наружной резьбой">
         </AccordionItem>
       </Accordion>
       <Accordion>
-        <AccordionItem title="Двойные муфтовые соединения">
-        </AccordionItem>
+        <AccordionItem title="Двойные муфтовые соединения"> </AccordionItem>
       </Accordion>
       <Accordion>
         <AccordionItem title="Рабочие характеристики клапанов и фитингов">
@@ -206,14 +219,9 @@ export default {
   </section>
 </template>
 
-
-
-
-
-
 <style lang="scss" scoped>
 .faq {
-  &__mobile{
+  &__mobile {
     display: none;
   }
   &__title {
@@ -272,7 +280,7 @@ export default {
     gap: 60px;
 
     &-title {
-      color: var(--primary-color, #17172d);
+      color: #17172d;
       font-family: "Century Gothic";
       font-size: 70px;
       font-style: normal;
@@ -310,7 +318,7 @@ export default {
     }
   }
 
-  &__description {
+  &-description {
     color: #17172d;
     font-family: "Myriad Pro";
     font-size: 20px;
@@ -328,58 +336,161 @@ export default {
   }
 }
 
-@media screen and (max-width: 375.99px) {
-  .faq{
-    &__title{
-      display: none;
+@media screen and (max-width: 1439.99px) {
+  .faq__title {
+    font-size: 80px;
+  }
+  .faq__subtitle {
+    font-size: 80px;
+  }
+  .faq__title::before {
+    width: 148px;
+    height: 9px;
+    content: "";
+    background: #17172d;
+    position: absolute;
+    right: 528px;
+    bottom: 107px;
+  }
+}
+
+@media screen and (max-width: 1199.99px) {
+  .faq__payment {
+    &-title {
+      color: #17172d;
+      font-family: "Century Gothic";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 90%;
+      letter-spacing: -1.4px;
+      text-transform: uppercase;
     }
-    &__content{
-      display: none;
-    }
-    &__mobile{
-    
+    &-description {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
       display: flex;
-      flex-direction: column
+      flex-direction: column;
+      gap: 20px;
     }
-    &__mobile-title{
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .faq__title {
+    font-size: 72px;
+  }
+  .faq__subtitle {
+    font-size: 72px;
+  }
+  .faq__title::before {
+    width: 113px;
+    height: 8px;
+    content: "";
+    background: #17172d;
+    position: absolute;
+    right: 486px;
+    bottom: 101px;
+  }
+  .faq__payment {
+    &-title {
+      color: #17172d;
+      font-family: "Century Gothic";
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 90%;
+      letter-spacing: -1.4px;
+      text-transform: uppercase;
+    }
+    &-description {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-item {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-text {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767.99px) {
+  .faq {
+    &__title {
+      display: none;
+    }
+    &__content {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &__mobile-title {
       color: #000;
       font-family: "Century Gothic";
       font-size: 50px;
       font-style: normal;
       font-weight: 700;
-      line-height: 100%; 
+      line-height: 100%;
       letter-spacing: -1px;
       text-transform: uppercase;
       padding: 10px;
     }
-    &__question{
+    &__question {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
-    &__accordion-content{
+    &__accordion-content {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
-    &__question-text{
-      color: #17172D;
+    &__question-text {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
-      line-height: 90%; 
+      line-height: 90%;
     }
-    &__question-answer{
-      color: var(---, #17172D);
+    &__question-answer {
+      color: var(---, #17172d);
       font-family: "Myriad Pro";
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 100%; 
+      line-height: 100%;
     }
-    &__answer-list{
-      color: #17172D;
+    &__answer-list {
+      color: #17172d;
       font-family: "Myriad Pro";
       font-size: 16px;
       font-style: normal;
@@ -387,9 +498,197 @@ export default {
       line-height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 10px; 
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 539.99px) {
+  .faq {
+    &__title {
+      display: none;
+    }
+    &__content {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &__mobile-title {
+      color: #000;
+      font-family: "Century Gothic";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+    &__question {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__accordion-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__question-text {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90%;
+    }
+    &__question-answer {
+      color: var(---, #17172d);
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &__answer-list {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 424.99px) {
+  .faq {
+    &__title {
+      display: none;
+    }
+    &__content {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &__mobile-title {
+      color: #000;
+      font-family: "Century Gothic";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+    &__question {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__accordion-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__question-text {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90%;
+    }
+    &__question-answer {
+      color: var(---, #17172d);
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &__answer-list {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 375.99px) {
+  .faq {
+    &__title {
+      display: none;
+    }
+    &__content {
+      display: none;
+    }
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    &__mobile-title {
+      color: #000;
+      font-family: "Century Gothic";
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+    &__question {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__accordion-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__question-text {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 90%;
+    }
+    &__question-answer {
+      color: var(---, #17172d);
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &__answer-list {
+      color: #17172d;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
   }
 }
 </style>
-

@@ -40,6 +40,9 @@ export default {
 
 <style lang="scss">
 .favorites {
+  &__clear-button-mob{
+    display: none;
+  }
   &__section {
     overflow-x: auto;
   }
@@ -245,6 +248,12 @@ export default {
 }
 
 @media screen and (max-width: 1439.99px) {
+  .privacy-policy__header{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 5px;
+}
 }
 
 @media screen and (max-width: 1199.99px) {
@@ -260,12 +269,15 @@ export default {
     line-height: 90%;
     text-transform: uppercase;
   }
+  
+
 }
 
 @media screen and (max-width: 767.99px) {
   .favorites__clear-button {
     display: none;
     &-mob {
+      display: block;
       margin-top: 20px;
       border-radius: 2px;
       border: 1px solid #d9d9d9;

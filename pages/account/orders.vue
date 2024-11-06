@@ -63,7 +63,7 @@ const breadcrumbsData = [
 
 @media screen and (max-width: 991.99px) {
   .profile__title {
-    font-size: 79px;
+    font-size: 75px;
   }
 }
 

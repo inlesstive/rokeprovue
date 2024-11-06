@@ -306,11 +306,11 @@
   .main__hits-head-title::after {
     content: "";
     position: absolute;
-    width: 111px;
-    height: 9px;
+    width: 112px;
+    height: 8px;
     background: #17172d;
-    bottom: 3px;
-    right: 116px;
+    bottom: 4px;
+    right: 114px;
   }
   .main__hits-card-list-item-img img {
     height: 75%;

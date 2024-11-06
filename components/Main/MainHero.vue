@@ -150,10 +150,10 @@
     font-size: 57px;
   }
   .main__hero-info-title-pos::after {
-    width: 160px;
-    left: 384px;
+    width: 162px;
+    left: 382px;
     bottom: 5px;
-    height: 9px;
+    height: 7px;
   }
 }
 

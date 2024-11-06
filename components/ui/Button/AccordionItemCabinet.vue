@@ -190,6 +190,12 @@ export default {
 }
 
 @media screen and (max-width: 991.99px) {
+  .accordion-header-order-wrapper {
+    gap: 16px;
+  }
+  .desktop{
+    gap: 13px;
+  }
 }
 
 @media screen and (max-width: 767.99px) {

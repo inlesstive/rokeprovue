@@ -379,9 +379,15 @@ table {
   h1 {
     font-size: 75px;
   }
+  .modal__popup-input{
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 767.99px) {
+  .modal__popup-input{
+    font-size: 20px;
+  }
   .side-2 {
     display: flex;
     flex-direction: column-reverse;
@@ -437,6 +443,9 @@ table {
 }
 
 @media screen and (max-width: 375.99px) {
+  .modal__popup-input{
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 319.99px) {
