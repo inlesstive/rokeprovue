@@ -222,6 +222,12 @@
   .first_address {
     display: none;
   }
+  .container {
+    padding: unset;
+  }
+  .footer {
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 539.99px) {
@@ -261,14 +267,11 @@
 
   .email {
     margin-top: 30px;
+    letter-spacing: -3.15px;
   }
 }
 
 @media screen and (max-width: 375.99px) {
-  .container{
-    padding: unset;
-  }
-
   .footer_top {
     padding: 20px 10px 30px 10px;
   }
@@ -305,9 +308,37 @@
     padding: 10px;
   }
 
+  .footer_top {
+    padding: 0 !important;
+    margin-top: 11px;
+  }
+  .footer_address {
+    gap: 5px;
+  }
   .email {
-    margin-top: 30px;
-    letter-spacing: -4px;
+    margin-top: 25px;
+    letter-spacing: -3px;
+  }
+  .footer_bottom {
+    margin-top: 14px;
+  }
+  .political {
+    display: flex;
+    gap: 40px;
+    justify-content: unset;
+    flex-direction: row;
+  }
+  .political_site {
+    margin-right: 37px;
+  }
+  .email {
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70%;
+    letter-spacing: -5.15px;
   }
 }
 

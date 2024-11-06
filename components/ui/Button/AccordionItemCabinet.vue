@@ -135,6 +135,10 @@ export default {
     }
   }
 }
+.desktop {
+  display: flex;
+  gap: 60px;
+}
 .accordion-title {
   color: #17172d;
   font-family: "Myriad Pro";
