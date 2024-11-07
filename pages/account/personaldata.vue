@@ -21,7 +21,7 @@
 
 <script setup>
 const breadcrumbsData = [
-  { text: "Профиль", to: "/account/profile" },
+  { text: "Личный кабинет", to: "/account/profile" },
   { text: "Профиль пользователя", to: "/account/personaldata" },
 ];
 </script>
@@ -75,7 +75,7 @@ const breadcrumbsData = [
   }
   .breadcrumbs {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .flex {
     flex-direction: column;
@@ -84,25 +84,35 @@ const breadcrumbsData = [
 
 @media screen and (max-width: 539.99px) {
   .profile__title {
-    font-size: 45px;
+    color: #000;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+  }
+  .profile__title {
+    margin-top: 0px;
+  }
+  .breadcrumbs {
+    margin: 6px 0px;
+    display: block;
+  }
+  .profile__title {
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 424.99px) {
 }
 @media screen and (max-width: 375.99px) {
-  .profile__title {
-    font-size: 35px;
-  }
   .mob {
     display: flex;
     &__presonal-data {
       flex-basis: 100%;
     }
-  }
-  .breadcrumbs {
-    margin: 15px 0px;
-    display: block;
   }
   .block {
     display: none;

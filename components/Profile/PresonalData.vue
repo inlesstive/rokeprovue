@@ -92,15 +92,15 @@
 }
 
 @media screen and (max-width: 991.99px) {
-  .profile{
-    &__input{
+  .profile {
+    &__input {
       font-size: 13px;
     }
   }
 }
 @media screen and (max-width: 767.99px) {
-  .profile{
-    &__input{
+  .profile {
+    &__input {
       font-size: 12px;
     }
   }
@@ -138,10 +138,10 @@
     &__input {
       color: #808080;
       font-family: "Myriad Pro";
-      font-size: 14px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 100%;
+      line-height: 100%; /* 18px */
       width: 100%;
       height: 100%;
       display: flex;
@@ -152,25 +152,28 @@
       margin-bottom: 15px;
     }
     &__section--password-change {
-    flex-grow: 1;
-    margin-bottom: unset;
+      flex-grow: 1;
+      margin-bottom: unset;
+    }
   }
+  .profile__section {
+    margin-top: 9px;
+    flex-basis: 100%;
+    gap: 10px;
+  }
+  .profile__inputs-grid {
+    grid-gap: 15px;
+  }
+  .profile__section.profile__section--password-change {
+    margin-top: 0px;
+  }
+  .profile__inputs-grid--full {
+    grid-gap: 15px;
   }
 }
 
 @media screen and (max-width: 375.99px) {
   .profile {
-    &__section {
-      margin-top: 20px;
-      flex-basis: 100%;
-      gap: 10px;
-    }
-    &__inputs-grid {
-      display: grid;
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-      grid-gap: 20px;
-      margin-bottom: 20px;
-    }
     &__inputs-grid--full {
       display: grid;
       grid-template-columns: repeat(1 minmax(0, 1fr));
@@ -187,26 +190,10 @@
       text-transform: uppercase;
       margin-bottom: unset;
     }
-    &__input {
-      color: #808080;
-      font-family: "Myriad Pro";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 100%;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: start;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid #d9d9d9;
-      margin-bottom: 15px;
-    }
     &__section--password-change {
-    flex-grow: 1;
-    margin-bottom: unset;
-  }
+      flex-grow: 1;
+      margin-bottom: unset;
+    }
   }
 }
 </style>

@@ -545,7 +545,23 @@ $maxwidthrightside: 368px;
   }
 
   .header__nav-logo {
-    padding: 0px 10px;
+    padding: 0px 30px;
+  }
+  .header__bottom-popup button {
+    margin: 0 32px;
+    color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%;
+  }
+  .header__bottom-search-button svg {
+    width: 14px;
+    height: 14px;
+  }
+  .mob {
+    padding: 11px 15px;
   }
 }
 
