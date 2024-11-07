@@ -166,6 +166,10 @@
   }
   .profile__section.profile__section--password-change {
     margin-top: 0px;
+    margin-bottom: -6px;
+  }
+  .profile__inputs-grid--full {
+    grid-gap: 15px;
   }
   .profile__inputs-grid--full {
     grid-gap: 15px;
@@ -174,12 +178,6 @@
 
 @media screen and (max-width: 375.99px) {
   .profile {
-    &__inputs-grid--full {
-      display: grid;
-      grid-template-columns: repeat(1 minmax(0, 1fr));
-      grid-gap: 20px;
-      margin-bottom: 20px;
-    }
     &__section-title {
       color: #000;
       font-family: "Myriad Pro";
