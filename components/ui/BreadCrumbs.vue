@@ -43,12 +43,24 @@ const isLast = (index) => index === props.crumbs.length - 1;
   color: #d9d9d9;
   & span {
     color: #17172d;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
   }
 }
 .breadcrumb-item a {
   text-decoration: none;
   color: inherit;
   transition: 0.3s;
+  color: #d9d9d9;
+
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 16.2px */
   &:hover {
     color: #17172d;
   }

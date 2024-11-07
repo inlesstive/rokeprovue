@@ -43,6 +43,7 @@ const breadcrumbsData = [
   font-weight: 700;
   line-height: 90%;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .breadcrumbs {
@@ -83,6 +84,16 @@ const breadcrumbsData = [
 }
 
 @media screen and (max-width: 539.99px) {
+  .profile__title {
+    color: #000;
+    font-family: "Century Gothic";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.76px;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (max-width: 424.99px) {

@@ -205,10 +205,12 @@ table {
     border: 1px solid #d7d7d7;
   }
 }
-
+.swiper {
+  display: none;
+}
 .product {
   // .product__side-wrapper
-  margin-top: 15px;
+  margin-top: 28px;
   margin-bottom: 60px;
   &__similar {
     margin-top: 150px;
@@ -229,7 +231,7 @@ table {
   &__side-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 30px;
     gap: 20px;
   }
 
@@ -554,6 +556,9 @@ table {
     &:hover {
       border: 2px solid #3064c7;
     }
+  }
+  .swiper {
+    display: flex;
   }
   .product__side-slider {
     margin-bottom: 20px;

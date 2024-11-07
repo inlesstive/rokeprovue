@@ -17,7 +17,7 @@
 <script setup>
 const breadcrumbsData = [
   { text: "Профиль", to: "/account/profile" },
-  { text: "Избранные", to: "/account/favorites" },
+  { text: "Избранное", to: "/account/favorites" },
 ];
 </script>
 

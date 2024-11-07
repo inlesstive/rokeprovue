@@ -50,3 +50,9 @@ button {
   justify-content: space-between;
   gap: 20px;
 }
+
+@media screen and (max-width: 539.99px) {
+  .flex {
+    gap: 15px;
+  }
+}
