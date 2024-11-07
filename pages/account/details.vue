@@ -67,7 +67,7 @@ const breadcrumbsData = [
   }
   .breadcrumbs {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .flex {
     flex-direction: column;
@@ -84,6 +84,9 @@ const breadcrumbsData = [
     line-height: 100%;
     letter-spacing: -0.8px;
     text-transform: uppercase;
+  }
+  .profile__title {
+    margin-top: 0px;
   }
 }
 
