@@ -80,7 +80,7 @@
     margin-bottom: 26px;
   }
   &__section {
-    flex-basis: 50%;
+    flex-basis: 49.5%;
     display: flex;
     gap: 26px;
     flex-direction: column;

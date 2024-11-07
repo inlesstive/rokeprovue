@@ -69,6 +69,14 @@ const setTab = (tab: any) => {
 </script>
 
 <style lang="scss" scoped>
+.profile__logout {
+  color: #17172d;
+  font-family: "Myriad Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; 
+}
 .contacts__tab-button--active {
   background: #3064c7;
   color: white;
@@ -78,7 +86,7 @@ const setTab = (tab: any) => {
   &__navigation {
     display: flex;
     flex-basis: 35%;
-    gap: 30px;
+    gap: 19px;
     flex-direction: column;
   }
 }

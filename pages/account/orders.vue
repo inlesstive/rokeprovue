@@ -43,7 +43,7 @@ const breadcrumbsData = [
   font-weight: 700;
   line-height: 90%;
   text-transform: uppercase;
-  margin-top: 30px;
+ 
 }
 
 .breadcrumbs {

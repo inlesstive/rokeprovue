@@ -31,7 +31,7 @@ const breadcrumbsData = [
   display: none;
 }
 .block {
-  margin-top: 30px;
+  margin-top: 56px;
   display: flex;
 }
 
@@ -51,7 +51,7 @@ const breadcrumbsData = [
   font-weight: 700;
   line-height: 90%;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .breadcrumbs {
   display: none;
