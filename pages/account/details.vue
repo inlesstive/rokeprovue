@@ -21,7 +21,7 @@ const breadcrumbsData = [
 ];
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .block {
   margin-top: 30px;
   display: flex;
@@ -94,9 +94,6 @@ const breadcrumbsData = [
   .breadcrumbs {
     margin: 15px 0px;
     display: block;
-  }
-  .block {
-    display: none;
   }
 }
 

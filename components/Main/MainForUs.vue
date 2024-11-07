@@ -56,7 +56,7 @@
 }
 .mainforus {
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 109px;
   &__top {
     display: flex;
     margin-bottom: 31px;

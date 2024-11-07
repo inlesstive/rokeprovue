@@ -4,8 +4,6 @@
   </button>
 </template>
 
-
-
 <style scoped>
 .button {
   display: flex;
@@ -23,7 +21,6 @@
   line-height: 90%;
   text-transform: uppercase;
   padding: 20px;
-
 }
 
 .button:hover {
@@ -32,7 +29,7 @@
 
 @media screen and (max-width: 375.99px) {
   .button {
-    font-size: 18px;
+    font-size: 14px;
     padding: 15px;
   }
 }

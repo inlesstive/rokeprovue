@@ -81,7 +81,7 @@
 .footer-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .footer_top {
@@ -101,6 +101,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
+  margin-right: 10px;
 }
 
 .political_discr {
@@ -111,7 +112,7 @@
   font-weight: 400;
   line-height: 90%;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 6px;
   text-decoration-thickness: 1px;
   text-decoration-color: #808080;
 }
@@ -119,7 +120,7 @@
 .footer {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 30px 20px;
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -127,10 +128,10 @@
 }
 
 .email {
-  margin-top: 111px;
+  margin-top: 81px;
   color: #fff;
   font-family: "Myriad Pro";
-  font-size: clamp(30px, 17vw, 331px);
+  font-size: clamp(30px, 20vw, 333px);
   font-style: normal;
   font-weight: 400;
   line-height: 70%;
@@ -138,7 +139,7 @@
 }
 
 .footer_bottom {
-  margin-top: 28px;
+  margin-top: 57px;
   justify-content: space-between;
   display: flex;
   width: 100%;
@@ -148,6 +149,7 @@
 .political {
   display: flex;
   gap: 20px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1439.99px) {
